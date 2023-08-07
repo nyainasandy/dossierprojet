@@ -1,0 +1,4158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connection</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Connection;
+		--web-view-id: Connection;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Connection;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Connection {
+		position: absolute;
+		width: 1920px;
+		height: 1878px;
+		background-color: rgba(243,243,243,1);
+		overflow: hidden;
+		--web-view-name: Connection;
+		--web-view-id: Connection;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#Header {
+		position: absolute;
+		width: 1920px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Header-container {
+		fill: rgba(255,188,66,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Header-container {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#Se_connecter {
+		left: 1625px;
+		top: 17px;
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#User-icon {
+		fill: rgba(0,0,0,1);
+	}
+	.User-icon {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 24px;
+		left: 1594px;
+		top: 13px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Menu {
+		position: absolute;
+		width: 1466px;
+		height: 41px;
+		left: 227px;
+		top: 66px;
+		overflow: visible;
+	}
+	#Search-input {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Search-input {
+		position: absolute;
+		overflow: visible;
+		width: 233px;
+		height: 41px;
+		left: 1233px;
+		top: 0px;
+	}
+	#Search-icon {
+		fill: rgba(0,0,0,1);
+	}
+	.Search-icon {
+		overflow: visible;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 1438px;
+		top: 13px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#NOS_PRODUITS {
+		left: 0px;
+		top: 13px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#NOS_PRODUITS_w {
+		left: 139px;
+		top: 13px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#NOS_PRODUITS_x {
+		left: 278px;
+		top: 13px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#Jumbotron {
+		position: absolute;
+		width: 1920px;
+		height: 324px;
+		left: 0px;
+		top: 130px;
+		overflow: visible;
+	}
+	#Jumbotron_z {
+		fill: rgba(33,131,128,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Jumbotron_z {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 324px;
+		left: 0px;
+		top: 0px;
+	}
+	#Trac_1 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_1 {
+		overflow: visible;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 51px;
+		top: 150px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_2 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_2 {
+		overflow: visible;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 1834px;
+		top: 150px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#PROMOTION_ETE {
+		left: 419px;
+		top: 104px;
+		position: absolute;
+		overflow: visible;
+		width: 195px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		color: rgba(255,188,66,1);
+	}
+	#JUQUA_40_DE_REDUCTION {
+		left: 419px;
+		top: 194px;
+		position: absolute;
+		overflow: visible;
+		width: 325px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		color: rgba(255,188,66,1);
+	}
+	#SAC__MAIN_Louis_Vuitton {
+		left: 419px;
+		top: 130px;
+		position: absolute;
+		overflow: visible;
+		width: 589px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		color: rgba(255,188,66,1);
+	}
+	#Sac-LV {
+		position: absolute;
+		width: 324px;
+		height: 304px;
+		left: 1432px;
+		top: 10px;
+		overflow: visible;
+	}
+	#Logo-LV {
+		position: absolute;
+		width: 103.1px;
+		height: 118.5px;
+		left: 227px;
+		top: 107.5px;
+		overflow: visible;
+	}
+	#Trac_9 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_9 {
+		overflow: visible;
+		position: absolute;
+		width: 103.1px;
+		height: 100px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_10 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_10 {
+		overflow: visible;
+		position: absolute;
+		width: 5.542px;
+		height: 10.5px;
+		left: 4px;
+		top: 107.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_11 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_11 {
+		overflow: visible;
+		position: absolute;
+		width: 8.9px;
+		height: 9.971px;
+		left: 10.1px;
+		top: 108.014px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_12 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_12 {
+		overflow: visible;
+		position: absolute;
+		width: 6.6px;
+		height: 10px;
+		left: 21.2px;
+		top: 107.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_13 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_13 {
+		overflow: visible;
+		position: absolute;
+		width: 0.55px;
+		height: 6.815px;
+		left: 30.3px;
+		top: 109.61px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_14 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_14 {
+		overflow: visible;
+		position: absolute;
+		width: 7.791px;
+		height: 9.462px;
+		left: 33px;
+		top: 108.232px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_15 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_15 {
+		overflow: visible;
+		position: absolute;
+		width: 7.805px;
+		height: 9.914px;
+		left: 44.764px;
+		top: 108px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_16 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_16 {
+		overflow: visible;
+		position: absolute;
+		width: 6.439px;
+		height: 10px;
+		left: 54.361px;
+		top: 107.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_17 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_17 {
+		overflow: visible;
+		position: absolute;
+		width: 2px;
+		height: 10px;
+		left: 63px;
+		top: 108px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_18 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_18 {
+		overflow: visible;
+		position: absolute;
+		width: 5.259px;
+		height: 10.3px;
+		left: 66.87px;
+		top: 108.2px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_19 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_19 {
+		overflow: visible;
+		position: absolute;
+		width: 5.259px;
+		height: 10.3px;
+		left: 74.87px;
+		top: 108.2px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_20 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_20 {
+		overflow: visible;
+		position: absolute;
+		width: 8.725px;
+		height: 9.916px;
+		left: 82px;
+		top: 108.059px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_21 {
+		fill: rgba(255,188,66,1);
+	}
+	.Trac_21 {
+		overflow: visible;
+		position: absolute;
+		width: 6.807px;
+		height: 9.387px;
+		left: 92.1px;
+		top: 108px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#new-article {
+		position: absolute;
+		width: 116px;
+		height: 113px;
+		left: 1389px;
+		top: 154px;
+		overflow: visible;
+	}
+	#Footer {
+		position: absolute;
+		width: 1920px;
+		height: 455px;
+		left: 0px;
+		top: 1423px;
+		overflow: visible;
+	}
+	#Rectangle_10 {
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_10 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 374px;
+		left: 0px;
+		top: 0px;
+	}
+	#A_PROPOS {
+		left: 227px;
+		top: 37px;
+		position: absolute;
+		overflow: visible;
+		width: 90px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#APPLICATIONS {
+		left: 227px;
+		top: 192px;
+		position: absolute;
+		overflow: visible;
+		width: 128px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#Qui_sommes-nous_ {
+		left: 227px;
+		top: 93px;
+		position: absolute;
+		overflow: visible;
+		width: 124px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Conditions_gnrales_de_vente {
+		left: 502px;
+		top: 93px;
+		position: absolute;
+		overflow: visible;
+		width: 188px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Aide {
+		left: 904px;
+		top: 93px;
+		position: absolute;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Cookie {
+		left: 502px;
+		top: 117px;
+		position: absolute;
+		overflow: visible;
+		width: 44px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Paiement_scuris {
+		left: 904px;
+		top: 117px;
+		position: absolute;
+		overflow: visible;
+		width: 111px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Nous_contacter {
+		left: 227px;
+		top: 117px;
+		position: absolute;
+		overflow: visible;
+		width: 95px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Nous_rejoindre {
+		left: 227px;
+		top: 141px;
+		position: absolute;
+		overflow: visible;
+		width: 93px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#INFORMATIONS_LEGALES {
+		left: 502px;
+		top: 37px;
+		position: absolute;
+		overflow: visible;
+		width: 217px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#FAQ {
+		left: 904px;
+		top: 37px;
+		position: absolute;
+		overflow: visible;
+		width: 36px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#NEWLETTERS {
+		left: 1343px;
+		top: 37px;
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#SUIVEZ-NOUS_SUR_LES_RESEAUX {
+		left: 904px;
+		top: 192px;
+		position: absolute;
+		overflow: visible;
+		width: 278px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#Rectangle_11 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_11 {
+		position: absolute;
+		overflow: visible;
+		width: 338px;
+		height: 42px;
+		left: 1343px;
+		top: 74px;
+	}
+	#Rectangle_12 {
+		fill: rgba(216,17,89,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_12 {
+		position: absolute;
+		overflow: visible;
+		width: 338px;
+		height: 44px;
+		left: 1343px;
+		top: 131px;
+	}
+	#Sabonner {
+		left: 1481px;
+		top: 144px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Votre_email {
+		left: 1359px;
+		top: 87px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#download_on_app_gallery00e5b75 {
+		position: absolute;
+		width: 117px;
+		height: 35px;
+		left: 227px;
+		top: 251px;
+		overflow: visible;
+	}
+	#download_on_google_play270265c {
+		position: absolute;
+		width: 117px;
+		height: 35px;
+		left: 363px;
+		top: 251px;
+		overflow: visible;
+	}
+	#download_on_app_store7341ef41 {
+		position: absolute;
+		width: 135px;
+		height: 40px;
+		left: 499px;
+		top: 251px;
+		overflow: visible;
+	}
+	#Rectangle_13 {
+		fill: rgba(143,45,86,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 81px;
+		left: 0px;
+		top: 374px;
+	}
+	#Copyright_Sandy_2023-07 {
+		left: 227px;
+		top: 405px;
+		position: absolute;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Trac_22 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_22 {
+		overflow: visible;
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 902px;
+		top: 239px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_23 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_23 {
+		overflow: visible;
+		position: absolute;
+		width: 32px;
+		height: 28px;
+		left: 966.001px;
+		top: 243px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_24 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_24 {
+		overflow: visible;
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 1030px;
+		top: 239px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Trac_25 {
+		fill: rgba(255,255,255,1);
+	}
+	.Trac_25 {
+		overflow: visible;
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 1093.999px;
+		top: 239px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Accueil__Se_connecter {
+		left: 227px;
+		top: 469px;
+		position: absolute;
+		overflow: visible;
+		width: 314px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(0,0,0,1);
+	}
+	#Login-form {
+		position: absolute;
+		width: 1144px;
+		height: 542px;
+		left: 419px;
+		top: 580px;
+		overflow: visible;
+	}
+	#Rectangle_14 {
+		fill: rgba(246,234,234,1);
+		stroke: rgba(136,136,136,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 1144px;
+		height: 542px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_15 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 672px;
+		height: 74px;
+		left: 341px;
+		top: 72px;
+	}
+	#Rectangle_16 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 483px;
+		height: 74px;
+		left: 341px;
+		top: 168px;
+	}
+	#E-mail {
+		left: 236px;
+		top: 88px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(0,0,0,1);
+	}
+	#Mot_de_passe {
+		left: 134px;
+		top: 184px;
+		position: absolute;
+		overflow: visible;
+		width: 191px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(0,0,0,1);
+	}
+	#Rectangle_17 {
+		fill: rgba(216,17,89,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_17 {
+		position: absolute;
+		overflow: visible;
+		width: 189px;
+		height: 74px;
+		left: 824px;
+		top: 168px;
+	}
+	#Mot_de_passe_oubli {
+		left: 341px;
+		top: 263px;
+		position: absolute;
+		overflow: visible;
+		width: 302px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(0,0,0,1);
+	}
+	#Rectangle_18 {
+		fill: rgba(216,17,89,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_18 {
+		position: absolute;
+		overflow: visible;
+		width: 482px;
+		height: 74px;
+		left: 342px;
+		top: 328px;
+	}
+	#SE_CONNECTER {
+		left: 473px;
+		top: 344px;
+		position: absolute;
+		overflow: visible;
+		width: 233px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 32px;
+		color: rgba(255,255,255,1);
+	}
+	#Crez_un_compte_ {
+		left: 344px;
+		top: 439px;
+		position: absolute;
+		overflow: visible;
+		width: 262px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 32px;
+		color: rgba(0,0,0,1);
+	}
+	#eye-solid {
+		fill: rgba(255,255,255,1);
+	}
+	.eye-solid {
+		overflow: visible;
+		position: absolute;
+		width: 42px;
+		height: 32px;
+		left: 898px;
+		top: 189px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+</style>
+<script id="applicationScript">
+///////////////////////////////////////
+// INITIALIZATION
+///////////////////////////////////////
+
+/**
+ * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
+ * Code subject to change.
+ **/
+
+if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
+
+var Application = function() {
+	// event constants
+	this.prefix = "--web-";
+	this.NAVIGATION_CHANGE = "viewChange";
+	this.VIEW_NOT_FOUND = "viewNotFound";
+	this.VIEW_CHANGE = "viewChange";
+	this.VIEW_CHANGING = "viewChanging";
+	this.STATE_NOT_FOUND = "stateNotFound";
+	this.APPLICATION_COMPLETE = "applicationComplete";
+	this.APPLICATION_RESIZE = "applicationResize";
+	this.SIZE_STATE_NAME = "data-is-view-scaled";
+	this.STATE_NAME = this.prefix + "state";
+
+	this.lastTrigger = null;
+	this.lastView = null;
+	this.lastState = null;
+	this.lastOverlay = null;
+	this.currentView = null;
+	this.currentState = null;
+	this.currentOverlay = null;
+	this.currentQuery = {index: 0, rule: null, mediaText: null, id: null};
+	this.inclusionQuery = "(min-width: 0px)";
+	this.exclusionQuery = "none and (min-width: 99999px)";
+	this.LastModifiedDateLabelName = "LastModifiedDateLabel";
+	this.viewScaleSliderId = "ViewScaleSliderInput";
+	this.pageRefreshedName = "showPageRefreshedNotification";
+	this.application = null;
+	this.applicationStylesheet = null;
+	this.showByMediaQuery = null;
+	this.mediaQueryDictionary = {};
+	this.viewsDictionary = {};
+	this.addedViews = [];
+	this.viewStates = [];
+	this.views = [];
+	this.viewIds = [];
+	this.viewQueries = {};
+	this.overlays = {};
+	this.overlayIds = [];
+	this.numberOfViews = 0;
+	this.verticalPadding = 0;
+	this.horizontalPadding = 0;
+	this.stateName = null;
+	this.viewScale = 1;
+	this.viewLeft = 0;
+	this.viewTop = 0;
+	this.horizontalScrollbarsNeeded = false;
+	this.verticalScrollbarsNeeded = false;
+
+	// view settings
+	this.showUpdateNotification = false;
+	this.showNavigationControls = false;
+	this.scaleViewsToFit = false;
+	this.scaleToFitOnDoubleClick = false;
+	this.actualSizeOnDoubleClick = false;
+	this.scaleViewsOnResize = false;
+	this.navigationOnKeypress = false;
+	this.showViewName = false;
+	this.enableDeepLinking = true;
+	this.refreshPageForChanges = false;
+	this.showRefreshNotifications = true;
+
+	// view controls
+	this.scaleViewSlider = null;
+	this.lastModifiedLabel = null;
+	this.supportsPopState = false; // window.history.pushState!=null;
+	this.initialized = false;
+
+	// refresh properties
+	this.refreshDuration = 250;
+	this.lastModifiedDate = null;
+	this.refreshRequest = null;
+	this.refreshInterval = null;
+	this.refreshContent = null;
+	this.refreshContentSize = null;
+	this.refreshCheckContent = false;
+	this.refreshCheckContentSize = false;
+
+	var self = this;
+
+	self.initialize = function(event) {
+		var view = self.getVisibleView();
+		var views = self.getVisibleViews();
+		if (view==null) view = self.getInitialView();
+		self.collectViews();
+		self.collectOverlays();
+		self.collectMediaQueries();
+
+		for (let index = 0; index < views.length; index++) {
+			var view = views[index];
+			self.setViewOptions(view);
+			self.setViewVariables(view);
+			self.centerView(view);
+		}
+
+		// sometimes the body size is 0 so we call this now and again later
+		if (self.initialized) {
+			window.addEventListener(self.NAVIGATION_CHANGE, self.viewChangeHandler);
+			window.addEventListener("keyup", self.keypressHandler);
+			window.addEventListener("keypress", self.keypressHandler);
+			window.addEventListener("resize", self.resizeHandler);
+			window.document.addEventListener("dblclick", self.doubleClickHandler);
+
+			if (self.supportsPopState) {
+				window.addEventListener('popstate', self.popStateHandler);
+			}
+			else {
+				window.addEventListener('hashchange', self.hashChangeHandler);
+			}
+
+			// we are ready to go
+			window.dispatchEvent(new Event(self.APPLICATION_COMPLETE));
+		}
+
+		if (self.initialized==false) {
+			if (self.enableDeepLinking) {
+				self.syncronizeViewToURL();
+			} 
+	
+			if (self.refreshPageForChanges) {
+				self.setupRefreshForChanges();
+			}
+	
+			self.initialized = true;
+		}
+		
+		if (self.scaleViewsToFit) {
+			self.viewScale = self.scaleViewToFit(view);
+			
+			if (self.viewScale<0) {
+				setTimeout(self.scaleViewToFit, 500, view);
+			}
+		}
+		else if (view) {
+			self.viewScale = self.getViewScaleValue(view);
+			self.centerView(view);
+			self.updateSliderValue(self.viewScale);
+		}
+		else {
+			// no view found
+		}
+	
+		if (self.showUpdateNotification) {
+			self.showNotification();
+		}
+
+		//"addEventListener" in window ? null : window.addEventListener = window.attachEvent;
+		//"addEventListener" in document ? null : document.addEventListener = document.attachEvent;
+	}
+
+
+	///////////////////////////////////////
+	// AUTO REFRESH 
+	///////////////////////////////////////
+
+	self.setupRefreshForChanges = function() {
+		self.refreshRequest = new XMLHttpRequest();
+
+		if (!self.refreshRequest) {
+			return false;
+		}
+
+		// get document start values immediately
+		self.requestRefreshUpdate();
+	}
+
+	/**
+	 * Attempt to check the last modified date by the headers 
+	 * or the last modified property from the byte array (experimental)
+	 **/
+	self.requestRefreshUpdate = function() {
+		var url = document.location.href;
+		var protocol = window.location.protocol;
+		var method;
+		
+		try {
+
+			if (self.refreshCheckContentSize) {
+				self.refreshRequest.open('HEAD', url, true);
+			}
+			else if (self.refreshCheckContent) {
+				self.refreshContent = document.documentElement.outerHTML;
+				self.refreshRequest.open('GET', url, true);
+				self.refreshRequest.responseType = "text";
+			}
+			else {
+
+				// get page last modified date for the first call to compare to later
+				if (self.lastModifiedDate==null) {
+
+					// File system does not send headers in FF so get blob if possible
+					if (protocol=="file:") {
+						self.refreshRequest.open("GET", url, true);
+						self.refreshRequest.responseType = "blob";
+					}
+					else {
+						self.refreshRequest.open("HEAD", url, true);
+						self.refreshRequest.responseType = "blob";
+					}
+
+					self.refreshRequest.onload = self.refreshOnLoadOnceHandler;
+
+					// In some browsers (Chrome & Safari) this error occurs at send: 
+					// 
+					// Chrome - Access to XMLHttpRequest at 'file:///index.html' from origin 'null' 
+					// has been blocked by CORS policy: 
+					// Cross origin requests are only supported for protocol schemes: 
+					// http, data, chrome, chrome-extension, https.
+					// 
+					// Safari - XMLHttpRequest cannot load file:///Users/user/Public/index.html. Cross origin requests are only supported for HTTP.
+					// 
+					// Solution is to run a local server, set local permissions or test in another browser
+					self.refreshRequest.send(null);
+
+					// In MS browsers the following behavior occurs possibly due to an AJAX call to check last modified date: 
+					// 
+					// DOM7011: The code on this page disabled back and forward caching.
+
+					// In Brave (Chrome) error when on the server
+					// index.js:221 HEAD https://www.example.com/ net::ERR_INSUFFICIENT_RESOURCES
+					// self.refreshRequest.send(null);
+
+				}
+				else {
+					self.refreshRequest = new XMLHttpRequest();
+					self.refreshRequest.onreadystatechange = self.refreshHandler;
+					self.refreshRequest.ontimeout = function() {
+						self.log("Couldn't find page to check for updates");
+					}
+					
+					var method;
+					if (protocol=="file:") {
+						method = "GET";
+					}
+					else {
+						method = "HEAD";
+					}
+
+					//refreshRequest.open('HEAD', url, true);
+					self.refreshRequest.open(method, url, true);
+					self.refreshRequest.responseType = "blob";
+					self.refreshRequest.send(null);
+				}
+			}
+		}
+		catch (error) {
+			self.log("Refresh failed for the following reason:")
+			self.log(error);
+		}
+	}
+
+	self.refreshHandler = function() {
+		var contentSize;
+
+		try {
+
+			if (self.refreshRequest.readyState === XMLHttpRequest.DONE) {
+				
+				if (self.refreshRequest.status === 2 || 
+					self.refreshRequest.status === 200) {
+					var pageChanged = false;
+
+					self.updateLastModifiedLabel();
+
+					if (self.refreshCheckContentSize) {
+						var lastModifiedHeader = self.refreshRequest.getResponseHeader("Last-Modified");
+						contentSize = self.refreshRequest.getResponseHeader("Content-Length");
+						//lastModifiedDate = refreshRequest.getResponseHeader("Last-Modified");
+						var headers = self.refreshRequest.getAllResponseHeaders();
+						var hasContentHeader = headers.indexOf("Content-Length")!=-1;
+						
+						if (hasContentHeader) {
+							contentSize = self.refreshRequest.getResponseHeader("Content-Length");
+
+							// size has not been set yet
+							if (self.refreshContentSize==null) {
+								self.refreshContentSize = contentSize;
+								// exit and let interval call this method again
+								return;
+							}
+
+							if (contentSize!=self.refreshContentSize) {
+								pageChanged = true;
+							}
+						}
+					}
+					else if (self.refreshCheckContent) {
+
+						if (self.refreshRequest.responseText!=self.refreshContent) {
+							pageChanged = true;
+						}
+					}
+					else {
+						lastModifiedHeader = self.getLastModified(self.refreshRequest);
+
+						if (self.lastModifiedDate!=lastModifiedHeader) {
+							self.log("lastModifiedDate:" + self.lastModifiedDate + ",lastModifiedHeader:" +lastModifiedHeader);
+							pageChanged = true;
+						}
+
+					}
+
+					
+					if (pageChanged) {
+						clearInterval(self.refreshInterval);
+						self.refreshUpdatedPage();
+						return;
+					}
+
+				}
+				else {
+					self.log('There was a problem with the request.');
+				}
+
+			}
+		}
+		catch( error ) {
+			//console.log('Caught Exception: ' + error);
+		}
+	}
+
+	self.refreshOnLoadOnceHandler = function(event) {
+
+		// get the last modified date
+		if (self.refreshRequest.response) {
+			self.lastModifiedDate = self.getLastModified(self.refreshRequest);
+
+			if (self.lastModifiedDate!=null) {
+
+				if (self.refreshInterval==null) {
+					self.refreshInterval = setInterval(self.requestRefreshUpdate, self.refreshDuration);
+				}
+			}
+			else {
+				self.log("Could not get last modified date from the server");
+			}
+		}
+	}
+
+	self.refreshUpdatedPage = function() {
+		if (self.showRefreshNotifications) {
+			var date = new Date().setTime((new Date().getTime()+10000));
+			document.cookie = encodeURIComponent(self.pageRefreshedName) + "=true" + "; max-age=6000;" + " path=/";
+		}
+
+		document.location.reload(true);
+	}
+
+	self.showNotification = function(duration) {
+		var notificationID = self.pageRefreshedName+"ID";
+		var notification = document.getElementById(notificationID);
+		if (duration==null) duration = 4000;
+
+		if (notification!=null) {return;}
+
+		notification = document.createElement("div");
+		notification.id = notificationID;
+		notification.textContent = "PAGE UPDATED";
+		var styleRule = ""
+		styleRule = "position: fixed; padding: 7px 16px 6px 16px; font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; left: 50%;";
+		styleRule += "top: 20px; background-color: rgba(0,0,0,.5); border-radius: 12px; color:rgb(235, 235, 235); transition: all 2s linear;";
+		styleRule += "transform: translateX(-50%); letter-spacing: .5px; filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, .1)); cursor: pointer";
+		notification.setAttribute("style", styleRule);
+
+		notification.className = "PageRefreshedClass";
+		notification.addEventListener("click", function() {
+			notification.parentNode.removeChild(notification);
+		});
+		
+		document.body.appendChild(notification);
+
+		setTimeout(function() {
+			notification.style.opacity = "0";
+			notification.style.filter = "drop-shadow( 0px 0px 0px rgba(0,0,0, .5))";
+			setTimeout(function() {
+				try {
+					notification.parentNode.removeChild(notification);
+				} catch(error) {}
+			}, duration)
+		}, duration);
+
+		document.cookie = encodeURIComponent(self.pageRefreshedName) + "=; max-age=1; path=/";
+	}
+
+	/**
+	 * Get the last modified date from the header 
+	 * or file object after request has been received
+	 **/
+	self.getLastModified = function(request) {
+		var date;
+
+		// file protocol - FILE object with last modified property
+		if (request.response && request.response.lastModified) {
+			date = request.response.lastModified;
+		}
+		
+		// http protocol - check headers
+		if (date==null) {
+			date = request.getResponseHeader("Last-Modified");
+		}
+
+		return date;
+	}
+
+	self.updateLastModifiedLabel = function() {
+		var labelValue = "";
+		
+		if (self.lastModifiedLabel==null) {
+			self.lastModifiedLabel = document.getElementById("LastModifiedLabel");
+		}
+
+		if (self.lastModifiedLabel) {
+			var seconds = parseInt(((new Date().getTime() - Date.parse(document.lastModified)) / 1000 / 60) * 100 + "");
+			var minutes = 0;
+			var hours = 0;
+
+			if (seconds < 60) {
+				seconds = Math.floor(seconds/10)*10;
+				labelValue = seconds + " seconds";
+			}
+			else {
+				minutes = parseInt((seconds/60) + "");
+
+				if (minutes>60) {
+					hours = parseInt((seconds/60/60) +"");
+					labelValue += hours==1 ? " hour" : " hours";
+				}
+				else {
+					labelValue = minutes+"";
+					labelValue += minutes==1 ? " minute" : " minutes";
+				}
+			}
+			
+			if (seconds<10) {
+				labelValue = "Updated now";
+			}
+			else {
+				labelValue = "Updated " + labelValue + " ago";
+			}
+
+			if (self.lastModifiedLabel.firstElementChild) {
+				self.lastModifiedLabel.firstElementChild.textContent = labelValue;
+
+			}
+			else if ("textContent" in self.lastModifiedLabel) {
+				self.lastModifiedLabel.textContent = labelValue;
+			}
+		}
+	}
+
+	self.getShortString = function(string, length) {
+		if (length==null) length = 30;
+		string = string!=null ? string.substr(0, length).replace(/\n/g, "") : "[String is null]";
+		return string;
+	}
+
+	self.getShortNumber = function(value, places) {
+		if (places==null || places<1) places = 4;
+		value = Math.round(value * Math.pow(10,places)) / Math.pow(10, places);
+		return value;
+	}
+
+	///////////////////////////////////////
+	// NAVIGATION CONTROLS
+	///////////////////////////////////////
+
+	self.updateViewLabel = function() {
+		var viewNavigationLabel = document.getElementById("ViewNavigationLabel");
+		var view = self.getVisibleView();
+		var viewIndex = view ? self.getViewIndex(view) : -1;
+		var viewName = view ? self.getViewPreferenceValue(view, self.prefix + "view-name") : null;
+		var viewId = view ? view.id : null;
+
+		if (viewNavigationLabel && view) {
+			if (viewName && viewName.indexOf('"')!=-1) {
+				viewName = viewName.replace(/"/g, "");
+			}
+
+			if (self.showViewName) {
+				viewNavigationLabel.textContent = viewName;
+				self.setTooltip(viewNavigationLabel, viewIndex + 1 + " of " + self.numberOfViews);
+			}
+			else {
+				viewNavigationLabel.textContent = viewIndex + 1 + " of " + self.numberOfViews;
+				self.setTooltip(viewNavigationLabel, viewName);
+			}
+
+		}
+	}
+
+	self.updateURL = function(view) {
+		view = view == null ? self.getVisibleView() : view;
+		var viewId = view ? view.id : null
+		var viewFragment = view ? "#"+ viewId : null;
+
+		if (viewId && self.viewIds.length>1 && self.enableDeepLinking) {
+
+			if (self.supportsPopState==false) {
+				self.setFragment(viewId);
+			}
+			else {
+				if (viewFragment!=window.location.hash) {
+
+					if (window.location.hash==null) {
+						window.history.replaceState({name:viewId}, null, viewFragment);
+					}
+					else {
+						window.history.pushState({name:viewId}, null, viewFragment);
+					}
+				}
+			}
+		}
+	}
+
+	self.updateURLState = function(view, stateName) {
+		stateName = view && (stateName=="" || stateName==null) ? self.getStateNameByViewId(view.id) : stateName;
+
+		if (self.supportsPopState==false) {
+			self.setFragment(stateName);
+		}
+		else {
+			if (stateName!=window.location.hash) {
+
+				if (window.location.hash==null) {
+					window.history.replaceState({name:view.viewId}, null, stateName);
+				}
+				else {
+					window.history.pushState({name:view.viewId}, null, stateName);
+				}
+			}
+		}
+	}
+
+	self.setFragment = function(value) {
+		window.location.hash = "#" + value;
+	}
+
+	self.setTooltip = function(element, value) {
+		// setting the tooltip in edge causes a page crash on hover
+		if (/Edge/.test(navigator.userAgent)) { return; }
+
+		if ("title" in element) {
+			element.title = value;
+		}
+	}
+
+	self.getStylesheetRules = function(styleSheet) {
+		try {
+			if (styleSheet) return styleSheet.cssRules || styleSheet.rules;
+	
+			return document.styleSheets[0]["cssRules"] || document.styleSheets[0]["rules"];
+		}
+		catch (error) {
+			// ERRORS:
+			// SecurityError: The operation is insecure.
+			// Errors happen when script loads before stylesheet or loading an external css locally
+
+			// InvalidAccessError: A parameter or an operation is not supported by the underlying object
+			// Place script after stylesheet
+
+			console.log(error);
+			if (error.toString().indexOf("The operation is insecure")!=-1) {
+				console.log("Load the stylesheet before the script or load the stylesheet inline until it can be loaded on a server")
+			}
+			return [];
+		}
+	}
+
+	/**
+	 * If single page application hide all of the views. 
+	 * @param {Number} selectedIndex if provided shows the view at index provided
+	 **/
+	self.hideViews = function(selectedIndex, animation) {
+		var rules = self.getStylesheetRules();
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			var cssText = rule && rule.cssText;
+
+			if (rule.media!=null && cssText.match("--web-view-name:")) {
+
+				if (queryIndex==selectedIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = selectedIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+				}
+				else {
+					if (animation) {
+						self.fadeOut(rule)
+					}
+					else {
+						self.disableMediaQuery(rule);
+					}
+				}
+				
+				queryIndex++;
+			}
+		}
+
+		self.numberOfViews = queryIndex;
+		self.updateViewLabel();
+		self.updateURL();
+
+		self.dispatchViewChange();
+
+		var view = self.getVisibleView();
+		var viewIndex = view ? self.getViewIndex(view) : -1;
+
+		return viewIndex==selectedIndex ? view : null;
+	}
+
+	/**
+	 * If single page application hide all of the views. 
+	 * @param {HTMLElement} selectedView if provided shows the view passed in
+	 **/
+	 self.hideAllViews = function(selectedView, animation) {
+		var views = self.views;
+		var queryIndex = 0;
+		var numberOfViews = views!=null ? views.length : 0;
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfViews;i++) {
+			var viewData = views[i];
+			var view = viewData && viewData.view;
+			var mediaRule = viewData && viewData.mediaRule;
+			
+			if (view==selectedView) {
+				self.currentQuery.mediaText = mediaRule.conditionText;
+				self.currentQuery.index = queryIndex;
+				self.currentQuery.rule = mediaRule;
+				self.enableMediaQuery(mediaRule);
+			}
+			else {
+				if (animation) {
+					self.fadeOut(mediaRule)
+				}
+				else {
+					self.disableMediaQuery(mediaRule);
+				}
+			}
+			
+			queryIndex++;
+		}
+
+		self.numberOfViews = queryIndex;
+		self.updateViewLabel();
+		self.updateURL();
+		self.dispatchViewChange();
+
+		var visibleView = self.getVisibleView();
+
+		return visibleView==selectedView ? selectedView : null;
+	}
+
+	/**
+	 * Hide view
+	 * @param {Object} view element to hide
+	 **/
+	self.hideView = function(view) {
+		var rule = view ? self.mediaQueryDictionary[view.id] : null;
+
+		if (rule) {
+			self.disableMediaQuery(rule);
+		}
+	}
+
+	/**
+	 * Hide overlay
+	 * @param {Object} overlay element to hide
+	 **/
+	self.hideOverlay = function(overlay) {
+		var rule = overlay ? self.mediaQueryDictionary[overlay.id] : null;
+
+		if (rule) {
+			self.disableMediaQuery(rule);
+
+			//if (self.showByMediaQuery) {
+				overlay.style.display = "none";
+			//}
+		}
+	}
+
+	/**
+	 * Show the view by media query. Does not hide current views
+	 * Sets view options by default
+	 * @param {Object} view element to show
+	 * @param {Boolean} setViewOptions sets view options if null or true
+	 */
+	self.showViewByMediaQuery = function(view, setViewOptions) {
+		var id = view ? view.id : null;
+		var query = id ? self.mediaQueryDictionary[id] : null;
+		var isOverlay = view ? self.isOverlay(view) : false;
+		setViewOptions = setViewOptions==null ? true : setViewOptions;
+
+		if (query) {
+			self.enableMediaQuery(query);
+
+			if (isOverlay && view && setViewOptions) {
+				self.setViewVariables(null, view);
+			}
+			else {
+				if (view && setViewOptions) self.setViewOptions(view);
+				if (view && setViewOptions) self.setViewVariables(view);
+			}
+		}
+	}
+
+	/**
+	 * Show the view. Does not hide current views
+	 */
+	self.showView = function(view, setViewOptions) {
+		var id = view ? view.id : null;
+		var query = id ? self.mediaQueryDictionary[id] : null;
+		var display = null;
+		setViewOptions = setViewOptions==null ? true : setViewOptions;
+
+		if (query) {
+			self.enableMediaQuery(query);
+			if (view==null) view =self.getVisibleView();
+			if (view && setViewOptions) self.setViewOptions(view);
+		}
+		else if (id) {
+			display = window.getComputedStyle(view).getPropertyValue("display");
+			if (display=="" || display=="none") {
+				view.style.display = "block";
+			}
+		}
+
+		if (view) {
+			if (self.currentView!=null) {
+				self.lastView = self.currentView;
+			}
+
+			self.currentView = view;
+		}
+	}
+
+	self.showViewById = function(id, setViewOptions) {
+		var view = id ? self.getViewById(id) : null;
+
+		if (view) {
+			self.showView(view);
+			return;
+		}
+
+		self.log("View not found '" + id + "'");
+	}
+
+	self.getElementView = function(element) {
+		var view = element;
+		var viewFound = false;
+
+		while (viewFound==false || view==null) {
+			if (view && self.viewsDictionary[view.id]) {
+				return view;
+			}
+			view = view.parentNode;
+		}
+	}
+
+	/**
+	 * Show overlay over view
+	 * @param {Event | HTMLElement} event event or html element with styles applied
+	 * @param {String} id id of view or view reference
+	 * @param {Number} x x location
+	 * @param {Number} y y location
+	 */
+	self.showOverlay = function(event, id, x, y) {
+		var overlay = id && typeof id === 'string' ? self.getViewById(id) : id ? id : null;
+		var query = overlay ? self.mediaQueryDictionary[overlay.id] : null;
+		var centerHorizontally = false;
+		var centerVertically = false;
+		var anchorLeft = false;
+		var anchorTop = false;
+		var anchorRight = false;
+		var anchorBottom = false;
+		var display = null;
+		var reparent = true;
+		var view = null;
+		
+		if (overlay==null || overlay==false) {
+			self.log("Overlay not found, '"+ id + "'");
+			return;
+		}
+
+		// get enter animation - event target must have css variables declared
+		if (event) {
+			var button = event.currentTarget || event; // can be event or htmlelement
+			var buttonComputedStyles = getComputedStyle(button);
+			var actionTargetValue = buttonComputedStyles.getPropertyValue(self.prefix+"action-target").trim();
+			var animation = buttonComputedStyles.getPropertyValue(self.prefix+"animation").trim();
+			var isAnimated = animation!="";
+			var targetType = buttonComputedStyles.getPropertyValue(self.prefix+"action-type").trim();
+			var actionTarget = self.application ? null : self.getElement(actionTargetValue);
+			var actionTargetStyles = actionTarget ? actionTarget.style : null;
+
+			if (actionTargetStyles) {
+				actionTargetStyles.setProperty("animation", animation);
+			}
+
+			if ("stopImmediatePropagation" in event) {
+				event.stopImmediatePropagation();
+			}
+		}
+		
+		if (self.application==false || targetType=="page") {
+			document.location.href = "./" + actionTargetValue;
+			return;
+		}
+
+		// remove any current overlays
+		if (self.currentOverlay) {
+
+			// act as switch if same button
+			if (self.currentOverlay==actionTarget || self.currentOverlay==null) {
+				if (self.lastTrigger==button) {
+					self.removeOverlay(isAnimated);
+					return;
+				}
+			}
+			else {
+				self.removeOverlay(isAnimated);
+			}
+		}
+
+		if (reparent) {
+			view = self.getElementView(button);
+			if (view) {
+				view.appendChild(overlay);
+			}
+		}
+
+		if (query) {
+			//self.setElementAnimation(overlay, null);
+			//overlay.style.animation = animation;
+			self.enableMediaQuery(query);
+			
+			var display = overlay && overlay.style.display;
+			
+			if (overlay && display=="" || display=="none") {
+				overlay.style.display = "block";
+				//self.setViewOptions(overlay);
+			}
+
+			// add animation defined in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.fadeIn(overlay, false, animation);
+			}
+		}
+		else if (id) {
+
+			display = window.getComputedStyle(overlay).getPropertyValue("display");
+
+			if (display=="" || display=="none") {
+				overlay.style.display = "block";
+			}
+
+			// add animation defined in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.fadeIn(overlay, false, animation);
+			}
+		}
+
+		// do not set x or y position if centering
+		var horizontal = self.prefix + "center-horizontally";
+		var vertical = self.prefix + "center-vertically";
+		var style = overlay.style;
+		var transform = [];
+
+		centerHorizontally = self.getIsStyleDefined(id, horizontal) ? self.getViewPreferenceBoolean(overlay, horizontal) : false;
+		centerVertically = self.getIsStyleDefined(id, vertical) ? self.getViewPreferenceBoolean(overlay, vertical) : false;
+		anchorLeft = self.getIsStyleDefined(id, "left");
+		anchorRight = self.getIsStyleDefined(id, "right");
+		anchorTop = self.getIsStyleDefined(id, "top");
+		anchorBottom = self.getIsStyleDefined(id, "bottom");
+
+		
+		if (self.viewsDictionary[overlay.id] && self.viewsDictionary[overlay.id].styleDeclaration) {
+			style = self.viewsDictionary[overlay.id].styleDeclaration.style;
+		}
+		
+		if (centerHorizontally) {
+			style.left = "50%";
+			style.transformOrigin = "0 0";
+			transform.push("translateX(-50%)");
+		}
+		else if (anchorRight && anchorLeft) {
+			style.left = x + "px";
+		}
+		else if (anchorRight) {
+			//style.right = x + "px";
+		}
+		else {
+			style.left = x + "px";
+		}
+		
+		if (centerVertically) {
+			style.top = "50%";
+			transform.push("translateY(-50%)");
+			style.transformOrigin = "0 0";
+		}
+		else if (anchorTop && anchorBottom) {
+			style.top = y + "px";
+		}
+		else if (anchorBottom) {
+			//style.bottom = y + "px";
+		}
+		else {
+			style.top = y + "px";
+		}
+
+		if (transform.length) {
+			style.transform = transform.join(" ");
+		}
+
+		self.currentOverlay = overlay;
+		self.lastTrigger = button;
+	}
+
+	self.goBack = function() {
+		if (self.currentOverlay) {
+			self.removeOverlay();
+		}
+		else if (self.lastView) {
+			self.goToView(self.lastView.id);
+		}
+	}
+
+	self.removeOverlay = function(animate) {
+		var overlay = self.currentOverlay;
+		animate = animate===false ? false : true;
+
+		if (overlay) {
+			var style = overlay.style;
+			
+			if (style.animation && self.supportAnimations && animate) {
+				self.reverseAnimation(overlay, true);
+
+				var duration = self.getAnimationDuration(style.animation, true);
+		
+				setTimeout(function() {
+					self.setElementAnimation(overlay, null);
+					self.hideOverlay(overlay);
+					self.currentOverlay = null;
+				}, duration);
+			}
+			else {
+				self.setElementAnimation(overlay, null);
+				self.hideOverlay(overlay);
+				self.currentOverlay = null;
+			}
+		}
+	}
+
+	/**
+	 * Reverse the animation and hide after
+	 * @param {Object} target element with animation
+	 * @param {Boolean} hide hide after animation ends
+	 */
+	self.reverseAnimation = function(target, hide) {
+		var lastAnimation = null;
+		var style = target.style;
+
+		style.animationPlayState = "paused";
+		lastAnimation = style.animation;
+		style.animation = null;
+		style.animationPlayState = "paused";
+
+		if (hide) {
+			//target.addEventListener("animationend", self.animationEndHideHandler);
+	
+			var duration = self.getAnimationDuration(lastAnimation, true);
+			var isOverlay = self.isOverlay(target);
+	
+			setTimeout(function() {
+				self.setElementAnimation(target, null);
+
+				if (isOverlay) {
+					self.hideOverlay(target);
+				}
+				else {
+					self.hideView(target);
+				}
+			}, duration);
+		}
+
+		setTimeout(function() {
+			style.animation = lastAnimation;
+			style.animationPlayState = "paused";
+			style.animationDirection = "reverse";
+			style.animationPlayState = "running";
+		}, 30);
+	}
+
+	self.animationEndHandler = function(event) {
+		var target = event.currentTarget;
+		self.dispatchEvent(new Event(event.type));
+	}
+
+	self.isOverlay = function(view) {
+		var result = view ? self.getViewPreferenceBoolean(view, self.prefix + "is-overlay") : false;
+
+		return result;
+	}
+
+	self.animationEndHideHandler = function(event) {
+		var target = event.currentTarget;
+		self.setViewVariables(null, target);
+		self.hideView(target);
+		target.removeEventListener("animationend", self.animationEndHideHandler);
+	}
+
+	self.animationEndShowHandler = function(event) {
+		var target = event.currentTarget;
+		target.removeEventListener("animationend", self.animationEndShowHandler);
+	}
+
+	self.setViewOptions = function(view) {
+
+		if (view) {
+			self.minimumScale = self.getViewPreferenceValue(view, self.prefix + "minimum-scale");
+			self.maximumScale = self.getViewPreferenceValue(view, self.prefix + "maximum-scale");
+			self.scaleViewsToFit = self.getViewPreferenceBoolean(view, self.prefix + "scale-to-fit");
+			self.scaleToFitType = self.getViewPreferenceValue(view, self.prefix + "scale-to-fit-type");
+			self.scaleToFitOnDoubleClick = self.getViewPreferenceBoolean(view, self.prefix + "scale-on-double-click");
+			self.actualSizeOnDoubleClick = self.getViewPreferenceBoolean(view, self.prefix + "actual-size-on-double-click");
+			self.scaleViewsOnResize = self.getViewPreferenceBoolean(view, self.prefix + "scale-on-resize");
+			self.enableScaleUp = self.getViewPreferenceBoolean(view, self.prefix + "enable-scale-up");
+			self.centerHorizontally = self.getViewPreferenceBoolean(view, self.prefix + "center-horizontally");
+			self.centerVertically = self.getViewPreferenceBoolean(view, self.prefix + "center-vertically");
+			self.navigationOnKeypress = self.getViewPreferenceBoolean(view, self.prefix + "navigate-on-keypress");
+			self.showViewName = self.getViewPreferenceBoolean(view, self.prefix + "show-view-name");
+			self.refreshPageForChanges = self.getViewPreferenceBoolean(view, self.prefix + "refresh-for-changes");
+			self.refreshPageForChangesInterval = self.getViewPreferenceValue(view, self.prefix + "refresh-interval");
+			self.showNavigationControls = self.getViewPreferenceBoolean(view, self.prefix + "show-navigation-controls");
+			self.scaleViewSlider = self.getViewPreferenceBoolean(view, self.prefix + "show-scale-controls");
+			self.enableDeepLinking = self.getViewPreferenceBoolean(view, self.prefix + "enable-deep-linking");
+			self.singlePageApplication = self.getViewPreferenceBoolean(view, self.prefix + "application");
+			self.showByMediaQuery = self.getViewPreferenceBoolean(view, self.prefix + "show-by-media-query");
+			self.showUpdateNotification = document.cookie!="" ? document.cookie.indexOf(self.pageRefreshedName)!=-1 : false;
+			self.imageComparisonDuration = self.getViewPreferenceValue(view, self.prefix + "image-comparison-duration");
+			self.supportAnimations = self.getViewPreferenceBoolean(view, self.prefix + "enable-animations", true);
+
+			if (self.scaleViewsToFit) {
+				var newScaleValue = self.scaleViewToFit(view);
+				
+				if (newScaleValue<0) {
+					setTimeout(self.scaleViewToFit, 500, view);
+				}
+			}
+			else {
+				self.viewScale = self.getViewScaleValue(view);
+				self.viewToFitWidthScale = self.getViewFitToViewportWidthScale(view, self.enableScaleUp)
+				self.viewToFitHeightScale = self.getViewFitToViewportScale(view, self.enableScaleUp);
+				self.updateSliderValue(self.viewScale);
+			}
+
+			if (self.imageComparisonDuration!=null) {
+				// todo
+			}
+
+			if (self.refreshPageForChangesInterval!=null) {
+				self.refreshDuration = Number(self.refreshPageForChangesInterval);
+			}
+		}
+	}
+
+	self.previousView = function(event) {
+		var rules = self.getStylesheetRules();
+		var view = self.getVisibleView()
+		var index = view ? self.getViewIndex(view) : -1;
+		var prevQueryIndex = index!=-1 ? index-1 : self.currentQuery.index-1;
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+
+		if (prevQueryIndex<0) {
+			return;
+		}
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			
+			if (rule.media!=null) {
+
+				if (queryIndex==prevQueryIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = prevQueryIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+					self.updateViewLabel();
+					self.updateURL();
+					self.dispatchViewChange();
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+
+				queryIndex++;
+			}
+		}
+	}
+
+	self.nextView = function(event) {
+		var rules = self.getStylesheetRules();
+		var view = self.getVisibleView();
+		var index = view ? self.getViewIndex(view) : -1;
+		var nextQueryIndex = index!=-1 ? index+1 : self.currentQuery.index+1;
+		var queryIndex = 0;
+		var numberOfRules = rules!=null ? rules.length : 0;
+		var numberOfMediaQueries = self.getNumberOfMediaRules();
+
+		if (event) {
+			event.stopImmediatePropagation();
+		}
+
+		if (nextQueryIndex>=numberOfMediaQueries) {
+			return;
+		}
+
+		// loop through rules and hide media queries except selected
+		for (var i=0;i<numberOfRules;i++) {
+			var rule = rules[i];
+			
+			if (rule.media!=null) {
+
+				if (queryIndex==nextQueryIndex) {
+					self.currentQuery.mediaText = rule.conditionText;
+					self.currentQuery.index = nextQueryIndex;
+					self.currentQuery.rule = rule;
+					self.enableMediaQuery(rule);
+					self.updateViewLabel();
+					self.updateURL();
+					self.dispatchViewChange();
+				}
+				else {
+					self.disableMediaQuery(rule);
+				}
+
+				queryIndex++;
+			}
+		}
+	}
+
+	/**
+	 * Enables a view via media query
+	 */
+	self.enableMediaQuery = function(rule) {
+
+		try {
+			rule.media.mediaText = self.inclusionQuery;
+		}
+		catch(error) {
+			//self.log(error);
+			rule.conditionText = self.inclusionQuery;
+		}
+	}
+
+	self.disableMediaQuery = function(rule) {
+
+		try {
+			rule.media.mediaText = self.exclusionQuery;
+		}
+		catch(error) {
+			rule.conditionText = self.exclusionQuery;
+		}
+	}
+
+	self.dispatchViewChange = function() {
+		try {
+			var event = new Event(self.NAVIGATION_CHANGE);
+			window.dispatchEvent(event);
+		}
+		catch (error) {
+			// In IE 11: Object doesn't support this action
+		}
+	}
+
+	self.getNumberOfMediaRules = function() {
+		var rules = self.getStylesheetRules();
+		var numberOfRules = rules ? rules.length : 0;
+		var numberOfQueries = 0;
+
+		for (var i=0;i<numberOfRules;i++) {
+			if (rules[i].media!=null) { numberOfQueries++; }
+		}
+		
+		return numberOfQueries;
+	}
+
+	/////////////////////////////////////////
+	// VIEW SCALE 
+	/////////////////////////////////////////
+
+	self.sliderChangeHandler = function(event) {
+		var value = self.getShortNumber(event.currentTarget.value/100);
+		var view = self.getVisibleView();
+		self.setViewScaleValue(view, false, value, true);
+	}
+
+	self.updateSliderValue = function(scale) {
+		var slider = document.getElementById(self.viewScaleSliderId);
+		var tooltip = parseInt(scale * 100 + "") + "%";
+		var inputType;
+		var inputValue;
+		
+		if (slider) {
+			inputValue = self.getShortNumber(scale * 100);
+			if (inputValue!=slider["value"]) {
+				slider["value"] = inputValue;
+			}
+			inputType = slider.getAttributeNS(null, "type");
+
+			if (inputType!="range") {
+				// input range is not supported
+				slider.style.display = "none";
+			}
+
+			self.setTooltip(slider, tooltip);
+		}
+	}
+
+	self.viewChangeHandler = function(event) {
+		var view = self.getVisibleView();
+		var matrix = view ? getComputedStyle(view).transform : null;
+		
+		if (matrix) {
+			self.viewScale = self.getViewScaleValue(view);
+			
+			var scaleNeededToFit = self.getViewFitToViewportScale(view);
+			var isViewLargerThanViewport = scaleNeededToFit<1;
+			
+			// scale large view to fit if scale to fit is enabled
+			if (self.scaleViewsToFit) {
+				self.scaleViewToFit(view);
+			}
+			else {
+				self.updateSliderValue(self.viewScale);
+			}
+		}
+	}
+
+	self.getViewScaleValue = function(view) {
+		var matrix = getComputedStyle(view).transform;
+
+		if (matrix) {
+			var matrixArray = matrix.replace("matrix(", "").split(",");
+			var scaleX = parseFloat(matrixArray[0]);
+			var scaleY = parseFloat(matrixArray[3]);
+			var scale = Math.min(scaleX, scaleY);
+		}
+
+		return scale;
+	}
+
+	/**
+	 * Scales view to scale. 
+	 * @param {Object} view view to scale. views are in views array
+	 * @param {Boolean} scaleToFit set to true to scale to fit. set false to use desired scale value
+	 * @param {Number} desiredScale scale to define. not used if scale to fit is false
+	 * @param {Boolean} isSliderChange indicates if slider is callee
+	 */
+	self.setViewScaleValue = function(view, scaleToFit, desiredScale, isSliderChange) {
+		var enableScaleUp = self.enableScaleUp;
+		var scaleToFitType = self.scaleToFitType;
+		var minimumScale = self.minimumScale;
+		var maximumScale = self.maximumScale;
+		var hasMinimumScale = !isNaN(minimumScale) && minimumScale!="";
+		var hasMaximumScale = !isNaN(maximumScale) && maximumScale!="";
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, enableScaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, enableScaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, enableScaleUp);
+		var scaleToFitFull = self.getViewFitToViewportScale(view, true);
+		var scaleToFitFullWidth = self.getViewFitToViewportWidthScale(view, true);
+		var scaleToFitFullHeight = self.getViewFitToViewportHeightScale(view, true);
+		var scaleToWidth = scaleToFitType=="width";
+		var scaleToHeight = scaleToFitType=="height";
+		var shrunkToFit = false;
+		var topPosition = null;
+		var leftPosition = null;
+		var translateY = null;
+		var translateX = null;
+		var transformValue = "";
+		var canCenterVertically = true;
+		var canCenterHorizontally = true;
+		var style = view.style;
+
+		if (view && self.viewsDictionary[view.id] && self.viewsDictionary[view.id].styleDeclaration) {
+			style = self.viewsDictionary[view.id].styleDeclaration.style;
+		}
+
+		if (scaleToFit && isSliderChange!=true) {
+			if (scaleToFitType=="fit" || scaleToFitType=="") {
+				desiredScale = scaleNeededToFit;
+			}
+			else if (scaleToFitType=="width") {
+				desiredScale = scaleNeededToFitWidth;
+			}
+			else if (scaleToFitType=="height") {
+				desiredScale = scaleNeededToFitHeight;
+			}
+		}
+		else {
+			if (isNaN(desiredScale)) {
+				desiredScale = 1;
+			}
+		}
+
+		self.updateSliderValue(desiredScale);
+		
+		// scale to fit width
+		if (scaleToWidth && scaleToHeight==false) {
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			canCenterHorizontally = scaleNeededToFitWidth>=1 && enableScaleUp==false;
+
+			if (isSliderChange) {
+				canCenterHorizontally = desiredScale<scaleToFitFullWidth;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFitWidth;
+			}
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "width", enableScaleUp, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "width", enableScaleUp, desiredScale, minimumScale, maximumScale);
+
+			if (desiredScale>1 && (enableScaleUp || isSliderChange)) {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+			else if (desiredScale>=1 && enableScaleUp==false) {
+				transformValue = "scale(" + 1 + ")";
+			}
+			else {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			return desiredScale;
+		}
+
+		// scale to fit height
+		if (scaleToHeight && scaleToWidth==false) {
+			//canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			//canCenterHorizontally = scaleNeededToFitHeight<=scaleNeededToFitWidth && enableScaleUp==false;
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			canCenterHorizontally = scaleNeededToFitWidth>=1 && enableScaleUp==false;
+			
+			if (isSliderChange) {
+				canCenterHorizontally = desiredScale<scaleToFitFullHeight;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFitHeight;
+			}
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+				//canCenterVertically = desiredScale>=scaleNeededToFitHeight && enableScaleUp==false;
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "height", enableScaleUp, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "height", enableScaleUp, desiredScale, minimumScale, maximumScale);
+
+			if (desiredScale>1 && (enableScaleUp || isSliderChange)) {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+			else if (desiredScale>=1 && enableScaleUp==false) {
+				transformValue = "scale(" + 1 + ")";
+			}
+			else {
+				transformValue = "scale(" + desiredScale + ")";
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			return scaleNeededToFitHeight;
+		}
+
+		if (scaleToFitType=="fit") {
+			//canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+			//canCenterHorizontally = scaleNeededToFitWidth>=scaleNeededToFitHeight;
+			canCenterVertically = scaleNeededToFitHeight>=scaleNeededToFit;
+			canCenterHorizontally = scaleNeededToFitWidth>=scaleNeededToFit;
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+
+			desiredScale = self.getShortNumber(desiredScale);
+
+			if (isSliderChange || scaleToFit==false) {
+				canCenterVertically = scaleToFitFullHeight>=desiredScale;
+				canCenterHorizontally = desiredScale<scaleToFitFullWidth;
+			}
+			else if (scaleToFit) {
+				desiredScale = scaleNeededToFit;
+			}
+
+			transformValue = "scale(" + desiredScale + ")";
+
+			//canCenterHorizontally = self.canCenterHorizontally(view, "fit", false, desiredScale);
+			//canCenterVertically = self.canCenterVertically(view, "fit", false, desiredScale);
+			
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			self.updateSliderValue(desiredScale);
+			
+			return desiredScale;
+		}
+
+		if (scaleToFitType=="default" || scaleToFitType=="") {
+			desiredScale = 1;
+
+			if (hasMinimumScale) {
+				desiredScale = Math.max(desiredScale, Number(minimumScale));
+			}
+			if (hasMaximumScale) {
+				desiredScale = Math.min(desiredScale, Number(maximumScale));
+			}
+
+			canCenterHorizontally = self.canCenterHorizontally(view, "none", false, desiredScale, minimumScale, maximumScale);
+			canCenterVertically = self.canCenterVertically(view, "none", false, desiredScale, minimumScale, maximumScale);
+
+			if (self.centerVertically) {
+				if (canCenterVertically) {
+					translateY = "-50%";
+					topPosition = "50%";
+				}
+				else {
+					translateY = "0";
+					topPosition = "0";
+				}
+				
+				if (style.top != topPosition) {
+					style.top = topPosition + "";
+				}
+
+				if (canCenterVertically) {
+					transformValue += " translateY(" + translateY+ ")";
+				}
+			}
+
+			if (self.centerHorizontally) {
+				if (canCenterHorizontally) {
+					translateX = "-50%";
+					leftPosition = "50%";
+				}
+				else {
+					translateX = "0";
+					leftPosition = "0";
+				}
+
+				if (style.left != leftPosition) {
+					style.left = leftPosition + "";
+				}
+
+				if (canCenterHorizontally) {
+					transformValue += " translateX(" + translateX+ ")";
+				}
+				else {
+					transformValue += " translateX(" + 0 + ")";
+				}
+			}
+
+			style.transformOrigin = "0 0";
+			style.transform = transformValue;
+
+
+			self.viewScale = desiredScale;
+			self.viewToFitWidthScale = scaleNeededToFitWidth;
+			self.viewToFitHeightScale = scaleNeededToFitHeight;
+			self.viewLeft = leftPosition;
+			self.viewTop = topPosition;
+
+			self.updateSliderValue(desiredScale);
+			
+			return desiredScale;
+		}
+	}
+
+	/**
+	 * Returns true if view can be centered horizontally
+	 * @param {HTMLElement} view view
+	 * @param {String} type type of scaling - width, height, all, none
+	 * @param {Boolean} scaleUp if scale up enabled 
+	 * @param {Number} scale target scale value 
+	 */
+	self.canCenterHorizontally = function(view, type, scaleUp, scale, minimumScale, maximumScale) {
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, scaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, scaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, scaleUp);
+		var canCenter = false;
+		var minScale;
+
+		type = type==null ? "none" : type;
+		scale = scale==null ? scale : scaleNeededToFitWidth;
+		scaleUp = scaleUp == null ? false : scaleUp;
+
+		if (type=="width") {
+	
+			if (scaleUp && maximumScale==null) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=1) {
+				canCenter = true;
+			}
+		}
+		else if (type=="height") {
+			minScale = Math.min(1, scaleNeededToFitHeight);
+			if (minimumScale!="" && maximumScale!="") {
+				minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFitHeight));
+			}
+			else {
+				if (minimumScale!="") {
+					minScale = Math.max(minimumScale, scaleNeededToFitHeight);
+				}
+				if (maximumScale!="") {
+					minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFitHeight));
+				}
+			}
+	
+			if (scaleUp && maximumScale=="") {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=minScale) {
+				canCenter = true;
+			}
+		}
+		else if (type=="fit") {
+			canCenter = scaleNeededToFitWidth>=scaleNeededToFit;
+		}
+		else {
+			if (scaleUp) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitWidth>=1) {
+				canCenter = true;
+			}
+		}
+
+		self.horizontalScrollbarsNeeded = canCenter;
+		
+		return canCenter;
+	}
+
+	/**
+	 * Returns true if view can be centered horizontally
+	 * @param {HTMLElement} view view to scale
+	 * @param {String} type type of scaling
+	 * @param {Boolean} scaleUp if scale up enabled 
+	 * @param {Number} scale target scale value 
+	 */
+	self.canCenterVertically = function(view, type, scaleUp, scale, minimumScale, maximumScale) {
+		var scaleNeededToFit = self.getViewFitToViewportScale(view, scaleUp);
+		var scaleNeededToFitWidth = self.getViewFitToViewportWidthScale(view, scaleUp);
+		var scaleNeededToFitHeight = self.getViewFitToViewportHeightScale(view, scaleUp);
+		var canCenter = false;
+		var minScale;
+
+		type = type==null ? "none" : type;
+		scale = scale==null ? 1 : scale;
+		scaleUp = scaleUp == null ? false : scaleUp;
+	
+		if (type=="width") {
+			canCenter = scaleNeededToFitHeight>=scaleNeededToFitWidth;
+		}
+		else if (type=="height") {
+			minScale = Math.max(minimumScale, Math.min(maximumScale, scaleNeededToFit));
+			canCenter = scaleNeededToFitHeight>=minScale;
+		}
+		else if (type=="fit") {
+			canCenter = scaleNeededToFitHeight>=scaleNeededToFit;
+		}
+		else {
+			if (scaleUp) {
+				canCenter = false;
+			}
+			else if (scaleNeededToFitHeight>=1) {
+				canCenter = true;
+			}
+		}
+
+		self.verticalScrollbarsNeeded = canCenter;
+		
+		return canCenter;
+	}
+
+	self.getViewFitToViewportScale = function(view, scaleUp) {
+		var enableScaleUp = scaleUp;
+		var availableWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		var availableHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var elementWidth = parseFloat(getComputedStyle(view, "style").width);
+		var elementHeight = parseFloat(getComputedStyle(view, "style").height);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementWidth) || isNaN(elementHeight)) {
+			return newScale;
+		}
+
+		availableWidth -= self.horizontalPadding;
+		availableHeight -= self.verticalPadding;
+
+		if (enableScaleUp) {
+			newScale = Math.min(availableHeight/elementHeight, availableWidth/elementWidth);
+		}
+		else if (elementWidth > availableWidth || elementHeight > availableHeight) {
+			newScale = Math.min(availableHeight/elementHeight, availableWidth/elementWidth);
+		}
+		
+		return newScale;
+	}
+
+	self.getViewFitToViewportWidthScale = function(view, scaleUp) {
+		// need to get browser viewport width when element
+		var isParentWindow = view && view.parentNode && view.parentNode===document.body;
+		var enableScaleUp = scaleUp;
+		var availableWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		var elementWidth = parseFloat(getComputedStyle(view, "style").width);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementWidth)) {
+			return newScale;
+		}
+
+		availableWidth -= self.horizontalPadding;
+
+		if (enableScaleUp) {
+			newScale = availableWidth/elementWidth;
+		}
+		else if (elementWidth > availableWidth) {
+			newScale = availableWidth/elementWidth;
+		}
+		
+		return newScale;
+	}
+
+	self.getViewFitToViewportHeightScale = function(view, scaleUp) {
+		var enableScaleUp = scaleUp;
+		var availableHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+		var elementHeight = parseFloat(getComputedStyle(view, "style").height);
+		var newScale = 1;
+
+		// if element is not added to the document computed values are NaN
+		if (isNaN(elementHeight)) {
+			return newScale;
+		}
+
+		availableHeight -= self.verticalPadding;
+
+		if (enableScaleUp) {
+			newScale = availableHeight/elementHeight;
+		}
+		else if (elementHeight > availableHeight) {
+			newScale = availableHeight/elementHeight;
+		}
+		
+		return newScale;
+	}
+
+	self.keypressHandler = function(event) {
+		var rightKey = 39;
+		var leftKey = 37;
+		
+		// listen for both events 
+		if (event.type=="keypress") {
+			window.removeEventListener("keyup", self.keypressHandler);
+		}
+		else {
+			window.removeEventListener("keypress", self.keypressHandler);
+		}
+		
+		if (self.showNavigationControls) {
+			if (self.navigationOnKeypress) {
+				if (event.keyCode==rightKey) {
+					self.nextView();
+				}
+				if (event.keyCode==leftKey) {
+					self.previousView();
+				}
+			}
+		}
+		else if (self.navigationOnKeypress) {
+			if (event.keyCode==rightKey) {
+				self.nextView();
+			}
+			if (event.keyCode==leftKey) {
+				self.previousView();
+			}
+		}
+	}
+
+	///////////////////////////////////
+	// GENERAL FUNCTIONS
+	///////////////////////////////////
+
+	self.getViewById = function(id) {
+		id = id ? id.replace("#", "") : "";
+		var view = self.viewIds.indexOf(id)!=-1 && self.getElement(id);
+		return view;
+	}
+
+	self.getViewIds = function() {
+		var viewIds = self.getViewPreferenceValue(document.body, self.prefix + "view-ids");
+		var viewId = null;
+
+		viewIds = viewIds!=null && viewIds!="" ? viewIds.split(",") : [];
+
+		if (viewIds.length==0) {
+			viewId = self.getViewPreferenceValue(document.body, self.prefix + "view-id");
+			viewIds = viewId ? [viewId] : [];
+		}
+
+		return viewIds;
+	}
+
+	self.getInitialViewId = function() {
+		var viewId = self.getViewPreferenceValue(document.body, self.prefix + "view-id");
+		return viewId;
+	}
+
+	self.getApplicationStylesheet = function() {
+		var stylesheetId = self.getViewPreferenceValue(document.body, self.prefix + "stylesheet-id");
+		self.applicationStylesheet = document.getElementById("applicationStylesheet");
+		return self.applicationStylesheet.sheet;
+	}
+
+	self.getVisibleView = function() {
+		var viewIds = self.getViewIds();
+		
+		for (var i=0;i<viewIds.length;i++) {
+			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
+			var view = self.getElement(viewId);
+			var postName = "_Class";
+
+			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+				view = self.getElement(viewId.replace(postName, ""));
+			}
+			
+			if (view) {
+				var display = getComputedStyle(view).display;
+		
+				if (display=="block" || display=="flex") {
+					return view;
+				}
+			}
+		}
+
+		return null;
+	}
+
+	self.getVisibleViews = function() {
+		var viewIds = self.getViewIds();
+		var views = [];
+		
+		for (var i=0;i<viewIds.length;i++) {
+			var viewId = viewIds[i].replace(/[\#?\.?](.*)/, "$" + "1");
+			var view = self.getElement(viewId);
+			var postName = "_Class";
+
+			if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+				view = self.getElement(viewId.replace(postName, ""));
+			}
+			
+			if (view) {
+				var display = getComputedStyle(view).display;
+				
+				if (display=="none") {
+					continue;
+				}
+
+				if (display=="block" || display=="flex") {
+					views.push(view);
+				}
+			}
+		}
+
+		return views;
+	}
+
+	self.getStateNameByViewId = function(id) {
+		var state = self.viewsDictionary[id];
+		return state && state.stateName;
+	}
+
+	self.getMatchingViews = function(ids) {
+		var views = self.addedViews.slice(0);
+		var matchingViews = [];
+
+		if (self.showByMediaQuery) {
+			for (let index = 0; index < views.length; index++) {
+				var viewId = views[index];
+				var state = self.viewsDictionary[viewId];
+				var rule = state && state.rule; 
+				var matchResults = window.matchMedia(rule.conditionText);
+				var view = self.views[viewId];
+				
+				if (matchResults.matches) {
+					if (ids==true) {
+						matchingViews.push(viewId);
+					}
+					else {
+						matchingViews.push(view);
+					}
+				}
+			}
+		}
+
+		return matchingViews;
+	}
+
+	self.ruleMatchesQuery = function(rule) {
+		var result = window.matchMedia(rule.conditionText);
+		return result.matches;
+	}
+
+	self.getViewsByStateName = function(stateName, matchQuery) {
+		var views = self.addedViews.slice(0);
+		var matchingViews = [];
+
+		if (self.showByMediaQuery) {
+
+			// find state name
+			for (let index = 0; index < views.length; index++) {
+				var viewId = views[index];
+				var state = self.viewsDictionary[viewId];
+				var rule = state.rule;
+				var mediaRule = state.mediaRule;
+				var view = self.views[viewId];
+				var viewStateName = self.getStyleRuleValue(mediaRule, self.STATE_NAME, state);
+				var stateFoundAtt = view.getAttribute(self.STATE_NAME)==state;
+				var matchesResults = false;
+				
+				if (viewStateName==stateName) {
+					if (matchQuery) {
+						matchesResults = self.ruleMatchesQuery(rule);
+
+						if (matchesResults) {
+							matchingViews.push(view);
+						}
+					}
+					else {
+						matchingViews.push(view);
+					}
+				}
+			}
+		}
+
+		return matchingViews;
+	}
+
+	self.getInitialView = function() {
+		var viewId = self.getInitialViewId();
+		viewId = viewId.replace(/[\#?\.?](.*)/, "$" + "1");
+		var view = self.getElement(viewId);
+		var postName = "_Class";
+
+		if (view==null && viewId && viewId.lastIndexOf(postName)!=-1) {
+			view = self.getElement(viewId.replace(postName, ""));
+		}
+
+		return view;
+	}
+
+	self.getViewIndex = function(view) {
+		var viewIds = self.getViewIds();
+		var id = view ? view.id : null;
+		var index = id && viewIds ? viewIds.indexOf(id) : -1;
+
+		return index;
+	}
+
+	self.syncronizeViewToURL = function() {
+		var fragment = self.getHashFragment();
+
+		if (self.showByMediaQuery) {
+			var stateName = fragment;
+			
+			if (stateName==null || stateName=="") {
+				var initialView = self.getInitialView();
+				stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+			}
+			
+			self.showMediaQueryViewsByState(stateName);
+			return;
+		}
+
+		var view = self.getViewById(fragment);
+		var index = view ? self.getViewIndex(view) : 0;
+		if (index==-1) index = 0;
+		var currentView = self.hideViews(index);
+
+		if (self.supportsPopState && currentView) {
+
+			if (fragment==null) {
+				window.history.replaceState({name:currentView.id}, null, "#"+ currentView.id);
+			}
+			else {
+				window.history.pushState({name:currentView.id}, null, "#"+ currentView.id);
+			}
+		}
+		
+		self.setViewVariables(view);
+		return view;
+	}
+
+	/**
+	 * Set the currentView or currentOverlay properties and set the lastView or lastOverlay properties
+	 */
+	self.setViewVariables = function(view, overlay, parentView) {
+		if (view) {
+			if (self.currentView) {
+				self.lastView = self.currentView;
+			}
+			self.currentView = view;
+		}
+
+		if (overlay) {
+			if (self.currentOverlay) {
+				self.lastOverlay = self.currentOverlay;
+			}
+			self.currentOverlay = overlay;
+		}
+	}
+
+	self.getViewPreferenceBoolean = function(view, property, altValue) {
+		var computedStyle = window.getComputedStyle(view);
+		var value = computedStyle.getPropertyValue(property);
+		var type = typeof value;
+		
+		if (value=="true" || (type=="string" && value.indexOf("true")!=-1)) {
+			return true;
+		}
+		else if (value=="" && arguments.length==3) {
+			return altValue;
+		}
+
+		return false;
+	}
+
+	self.getViewPreferenceValue = function(view, property, defaultValue) {
+		var value = window.getComputedStyle(view).getPropertyValue(property);
+
+		if (value===undefined) {
+			return defaultValue;
+		}
+		
+		value = value.replace(/^[\s\"]*/, "");
+		value = value.replace(/[\s\"]*$/, "");
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) { 
+			return capture;
+		});
+
+		return value;
+	}
+
+	self.getStyleRuleValue = function(cssRule, property) {
+		var value = cssRule ? cssRule.style.getPropertyValue(property) : null;
+
+		if (value===undefined) {
+			return null;
+		}
+		
+		value = value.replace(/^[\s\"]*/, "");
+		value = value.replace(/[\s\"]*$/, "");
+		value = value.replace(/^[\s"]*(.*?)[\s"]*$/, function (match, capture) { 
+			return capture;
+		});
+
+		return value;
+	}
+
+	/**
+	 * Get the first defined value of property. Returns empty string if not defined
+	 * @param {String} id id of element
+	 * @param {String} property 
+	 */
+	self.getCSSPropertyValueForElement = function(id, property) {
+		var styleSheets = document.styleSheets;
+		var numOfStylesheets = styleSheets.length;
+		var values = [];
+		var selectorIDText = "#" + id;
+		var selectorClassText = "." + id + "_Class";
+		var value;
+
+		for(var i=0;i<numOfStylesheets;i++) {
+			var styleSheet = styleSheets[i];
+			var cssRules = self.getStylesheetRules(styleSheet);
+			var numOfCSSRules = cssRules.length;
+			var cssRule;
+			
+			for (var j=0;j<numOfCSSRules;j++) {
+				cssRule = cssRules[j];
+				
+				if (cssRule.media) {
+					var mediaRules = cssRule.cssRules;
+					var numOfMediaRules = mediaRules ? mediaRules.length : 0;
+					
+					for(var k=0;k<numOfMediaRules;k++) {
+						var mediaRule = mediaRules[k];
+						
+						if (mediaRule.selectorText==selectorIDText || mediaRule.selectorText==selectorClassText) {
+							
+							if (mediaRule.style && mediaRule.style.getPropertyValue(property)!="") {
+								value = mediaRule.style.getPropertyValue(property);
+								values.push(value);
+							}
+						}
+					}
+				}
+				else {
+
+					if (cssRule.selectorText==selectorIDText || cssRule.selectorText==selectorClassText) {
+						if (cssRule.style && cssRule.style.getPropertyValue(property)!="") {
+							value = cssRule.style.getPropertyValue(property);
+							values.push(value);
+						}
+					}
+				}
+			}
+		}
+
+		return values.pop();
+	}
+
+	self.getIsStyleDefined = function(id, property) {
+		var value = self.getCSSPropertyValueForElement(id, property);
+		return value!==undefined && value!="";
+	}
+
+	self.collectViews = function() {
+		var viewIds = self.getViewIds();
+
+		for (let index = 0; index < viewIds.length; index++) {
+			const id = viewIds[index];
+			const view = self.getElement(id);
+			self.views[id] = view;
+		}
+		
+		self.viewIds = viewIds;
+	}
+
+	self.collectOverlays = function() {
+		var viewIds = self.getViewIds();
+		var ids = [];
+
+		for (let index = 0; index < viewIds.length; index++) {
+			const id = viewIds[index];
+			const view = self.getViewById(id);
+			const isOverlay = view && self.isOverlay(view);
+			
+			if (isOverlay) {
+				ids.push(id);
+				self.overlays[id] = view;
+			}
+		}
+		
+		self.overlayIds = ids;
+	}
+
+	self.collectMediaQueries = function() {
+		var viewIds = self.getViewIds();
+		var styleSheet = self.getApplicationStylesheet();
+		var cssRules = self.getStylesheetRules(styleSheet);
+		var numOfCSSRules = cssRules ? cssRules.length : 0;
+		var cssRule;
+		var id = viewIds.length ? viewIds[0]: ""; // single view
+		var selectorIDText = "#" + id;
+		var selectorClassText = "." + id + "_Class";
+		var viewsNotFound = viewIds.slice();
+		var viewsFound = [];
+		var selectorText = null;
+		var property = self.prefix + "view-id";
+		var stateName = self.prefix + "state";
+		var stateValue = null;
+		var view = null;
+		
+		for (var j=0;j<numOfCSSRules;j++) {
+			cssRule = cssRules[j];
+			
+			if (cssRule.media) {
+				var mediaRules = cssRule.cssRules;
+				var numOfMediaRules = mediaRules ? mediaRules.length : 0;
+				var mediaViewInfoFound = false;
+				var mediaId = null;
+				
+				for(var k=0;k<numOfMediaRules;k++) {
+					var mediaRule = mediaRules[k];
+
+					selectorText = mediaRule.selectorText;
+					
+					if (selectorText==".mediaViewInfo" && mediaViewInfoFound==false) {
+
+						mediaId = self.getStyleRuleValue(mediaRule, property);
+						stateValue = self.getStyleRuleValue(mediaRule, stateName);
+
+						selectorIDText = "#" + mediaId;
+						selectorClassText = "." + mediaId + "_Class";
+						view = self.getElement(mediaId);
+						
+						// prevent duplicates from load and domcontentloaded events
+						if (self.addedViews.indexOf(mediaId)==-1) {
+							self.addView(view, mediaId, cssRule, mediaRule, stateValue);
+						}
+
+						viewsFound.push(mediaId);
+
+						if (viewsNotFound.indexOf(mediaId)!=-1) {
+							viewsNotFound.splice(viewsNotFound.indexOf(mediaId));
+						}
+
+						mediaViewInfoFound = true;
+					}
+
+					if (selectorIDText==selectorText || selectorClassText==selectorText) {
+						var styleObject = self.viewsDictionary[mediaId];
+						if (styleObject) {
+							styleObject.styleDeclaration = mediaRule;
+						}
+						break;
+					}
+				}
+			}
+			else {
+				selectorText = cssRule.selectorText;
+				
+				if (selectorText==null) continue;
+
+				selectorText = selectorText.replace(/[#|\s|*]?/g, "");
+
+				if (viewIds.indexOf(selectorText)!=-1) {
+					view = self.getElement(selectorText);
+					self.addView(view, selectorText, cssRule, null, stateValue);
+
+					if (viewsNotFound.indexOf(selectorText)!=-1) {
+						viewsNotFound.splice(viewsNotFound.indexOf(selectorText));
+					}
+
+					break;
+				}
+			}
+		}
+
+		if (viewsNotFound.length) {
+			console.log("Could not find the following views:" + viewsNotFound.join(",") + "");
+			console.log("Views found:" + viewsFound.join(",") + "");
+		}
+	}
+
+	/**
+	 * Adds a view
+	 * @param {HTMLElement} view view element
+	 * @param {String} id id of view element
+	 * @param {CSSRule} cssRule of view element
+	 * @param {CSSMediaRule} mediaRule media rule of view element
+	 * @param {String} stateName name of state if applicable
+	 **/
+	self.addView = function(view, viewId, cssRule, mediaRule, stateName) {
+		var viewData = {};
+		viewData.name = viewId;
+		viewData.rule = cssRule;
+		viewData.id = viewId;
+		viewData.mediaRule = mediaRule;
+		viewData.stateName = stateName;
+
+		self.views.push(viewData);
+		self.addedViews.push(viewId);
+		self.viewsDictionary[viewId] = viewData;
+		self.mediaQueryDictionary[viewId] = cssRule;
+	}
+
+	self.hasView = function(name) {
+
+		if (self.addedViews.indexOf(name)!=-1) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * Go to view by id. Views are added in addView()
+	 * @param {String} id id of view in current
+	 * @param {Boolean} maintainPreviousState if true then do not hide other views
+	 * @param {String} parent id of parent view
+	 **/
+	self.goToView = function(id, maintainPreviousState, parent) {
+		var state = self.viewsDictionary[id];
+
+		if (state) {
+			if (maintainPreviousState==false || maintainPreviousState==null) {
+				self.hideViews();
+			}
+			self.enableMediaQuery(state.rule);
+			self.updateViewLabel();
+			self.updateURL();
+		}
+		else {
+			var event = new Event(self.STATE_NOT_FOUND);
+			self.stateName = id;
+			window.dispatchEvent(event);
+		}
+	}
+
+	/**
+	 * Go to the view in the event targets CSS variable
+	 **/
+	self.goToTargetView = function(event) {
+		var button = event.currentTarget;
+		var buttonComputedStyles = getComputedStyle(button);
+		var actionTargetValue = buttonComputedStyles.getPropertyValue(self.prefix+"action-target").trim();
+		var animation = buttonComputedStyles.getPropertyValue(self.prefix+"animation").trim();
+		var targetType = buttonComputedStyles.getPropertyValue(self.prefix+"action-type").trim();
+		var targetView = self.application ? null : self.getElement(actionTargetValue);
+		var targetState = targetView ? self.getStateNameByViewId(targetView.id) : null;
+		var actionTargetStyles = targetView ? targetView.style : null;
+		var state = self.viewsDictionary[actionTargetValue];
+		
+		// navigate to page
+		if (self.application==false || targetType=="page") {
+			document.location.href = "./" + actionTargetValue;
+			return;
+		}
+
+		// if view is found
+		if (targetView) {
+
+			if (self.currentOverlay) {
+				self.removeOverlay(false);
+			}
+
+			if (self.showByMediaQuery) {
+				var stateName = targetState;
+				
+				if (stateName==null || stateName=="") {
+					var initialView = self.getInitialView();
+					stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+				}
+				self.showMediaQueryViewsByState(stateName, event);
+				return;
+			}
+
+			// add animation set in event target style declaration
+			if (animation && self.supportAnimations) {
+				self.crossFade(self.currentView, targetView, false, animation);
+			}
+			else {
+				self.setViewVariables(self.currentView);
+				self.hideViews();
+				self.enableMediaQuery(state.rule);
+				self.scaleViewIfNeeded(targetView);
+				self.centerView(targetView);
+				self.updateViewLabel();
+				self.updateURL();
+			}
+		}
+		else {
+			var stateEvent = new Event(self.STATE_NOT_FOUND);
+			self.stateName = name;
+			window.dispatchEvent(stateEvent);
+		}
+
+		event.stopImmediatePropagation();
+	}
+
+	/**
+	 * Cross fade between views
+	 **/
+	self.crossFade = function(from, to, update, animation) {
+		var targetIndex = to.parentNode
+		var fromIndex = Array.prototype.slice.call(from.parentElement.children).indexOf(from);
+		var toIndex = Array.prototype.slice.call(to.parentElement.children).indexOf(to);
+
+		if (from.parentNode==to.parentNode) {
+			var reverse = self.getReverseAnimation(animation);
+			var duration = self.getAnimationDuration(animation, true);
+
+			// if target view is above (higher index)
+			// then fade in target view 
+			// and after fade in then hide previous view instantly
+			if (fromIndex<toIndex) {
+				self.setElementAnimation(from, null);
+				self.setElementAnimation(to, null);
+				self.showViewByMediaQuery(to);
+				self.fadeIn(to, update, animation);
+
+				setTimeout(function() {
+					self.setElementAnimation(to, null);
+					self.setElementAnimation(from, null);
+					self.hideView(from);
+					self.updateURL();
+					self.setViewVariables(to);
+					self.updateViewLabel();
+				}, duration)
+			}
+			// if target view is on bottom
+			// then show target view instantly 
+			// and fade out current view
+			else if (fromIndex>toIndex) {
+				self.setElementAnimation(to, null);
+				self.setElementAnimation(from, null);
+				self.showViewByMediaQuery(to);
+				self.fadeOut(from, update, reverse);
+
+				setTimeout(function() {
+					self.setElementAnimation(to, null);
+					self.setElementAnimation(from, null);
+					self.hideView(from);
+					self.updateURL();
+					self.setViewVariables(to);
+				}, duration)
+			}
+		}
+	}
+
+	self.fadeIn = function(element, update, animation) {
+		self.showViewByMediaQuery(element);
+
+		if (update) {
+			self.updateURL(element);
+
+			element.addEventListener("animationend", function(event) {
+				element.style.animation = null;
+				self.setViewVariables(element);
+				self.updateViewLabel();
+				element.removeEventListener("animationend", arguments.callee);
+			});
+		}
+
+		self.setElementAnimation(element, null);
+		
+		element.style.animation = animation;
+	}
+
+	self.fadeOutCurrentView = function(animation, update) {
+		if (self.currentView) {
+			self.fadeOut(self.currentView, update, animation);
+		}
+		if (self.currentOverlay) {
+			self.fadeOut(self.currentOverlay, update, animation);
+		}
+	}
+
+	self.fadeOut = function(element, update, animation) {
+		if (update) {
+			element.addEventListener("animationend", function(event) {
+				element.style.animation = null;
+				self.hideView(element);
+				element.removeEventListener("animationend", arguments.callee);
+			});
+		}
+
+		element.style.animationPlayState = "paused";
+		element.style.animation = animation;
+		element.style.animationPlayState = "running";
+	}
+
+	self.getReverseAnimation = function(animation) {
+		if (animation && animation.indexOf("reverse")==-1) {
+			animation += " reverse";
+		}
+
+		return animation;
+	}
+
+	/**
+	 * Get duration in animation string
+	 * @param {String} animation animation value
+	 * @param {Boolean} inMilliseconds length in milliseconds if true
+	 */
+	self.getAnimationDuration = function(animation, inMilliseconds) {
+		var duration = 0;
+		var expression = /.+(\d\.\d)s.+/;
+
+		if (animation && animation.match(expression)) {
+			duration = parseFloat(animation.replace(expression, "$" + "1"));
+			if (duration && inMilliseconds) duration = duration * 1000;
+		}
+
+		return duration;
+	}
+
+	self.setElementAnimation = function(element, animation, priority) {
+		element.style.setProperty("animation", animation, "important");
+	}
+
+	self.getElement = function(id) {
+		id = id ? id.trim() : id;
+		var element = id ? document.getElementById(id) : null;
+
+		return element;
+	}
+
+	self.getElementById = function(id) {
+		id = id ? id.trim() : id;
+		var element = id ? document.getElementById(id) : null;
+
+		return element;
+	}
+
+	self.getElementByClass = function(className) {
+		className = className ? className.trim() : className;
+		var elements = document.getElementsByClassName(className);
+
+		return elements.length ? elements[0] : null;
+	}
+
+	self.resizeHandler = function(event) {
+		
+		if (self.showByMediaQuery) {
+			if (self.enableDeepLinking) {
+				var stateName = self.getHashFragment();
+
+				if (stateName==null || stateName=="") {
+					var initialView = self.getInitialView();
+					stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+				}
+				self.showMediaQueryViewsByState(stateName, event);
+			}
+		}
+		else {
+			var visibleViews = self.getVisibleViews();
+
+			for (let index = 0; index < visibleViews.length; index++) {	
+				var view = visibleViews[index];
+				self.scaleViewIfNeeded(view);
+			}
+		}
+
+		window.dispatchEvent(new Event(self.APPLICATION_RESIZE));
+	}
+
+	self.scaleViewIfNeeded = function(view) {
+
+		if (self.scaleViewsOnResize) {
+			if (view==null) {
+				view = self.getVisibleView();
+			}
+
+			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME)=="false" ? false : true;
+
+			if (isViewScaled) {
+				self.scaleViewToFit(view, true);
+			}
+			else {
+				self.scaleViewToActualSize(view);
+			}
+		}
+		else if (view) {
+			self.centerView(view);
+		}
+	}
+
+	self.centerView = function(view) {
+
+		if (self.scaleViewsToFit) {
+			self.scaleViewToFit(view, true);
+		}
+		else {
+			self.scaleViewToActualSize(view);  // for centering support for now
+		}
+	}
+
+	self.preventDoubleClick = function(event) {
+		event.stopImmediatePropagation();
+	}
+
+	self.getHashFragment = function() {
+		var value = window.location.hash ? window.location.hash.replace("#", "") : "";
+		return value;
+	}
+
+	self.showBlockElement = function(view) {
+		view.style.display = "block";
+	}
+
+	self.hideElement = function(view) {
+		view.style.display = "none";
+	}
+
+	self.showStateFunction = null;
+
+	self.showMediaQueryViewsByState = function(state, event) {
+		// browser will hide and show by media query (small, medium, large)
+		// but if multiple views exists at same size user may want specific view
+		// if showStateFunction is defined that is called with state fragment and user can show or hide each media matching view by returning true or false
+		// if showStateFunction is not defined and state is defined and view has a defined state that matches then show that and hide other matching views
+		// if no state is defined show view 
+		// an viewChanging event is dispatched before views are shown or hidden that can be prevented 
+
+		// get all matched queries
+		// if state name is specified then show that view and hide other views
+		// if no state name is defined then show
+		var matchedViews = self.getMatchingViews();
+		var matchMediaQuery = true;
+		var foundViews = self.getViewsByStateName(state, matchMediaQuery);
+		var showViews = [];
+		var hideViews = [];
+
+		// loop views that match media query 
+		for (let index = 0; index < matchedViews.length; index++) {
+			var view = matchedViews[index];
+			
+			// let user determine visible view
+			if (self.showStateFunction!=null) {
+				if (self.showStateFunction(view, state)) {
+					showViews.push(view);
+				}
+				else {
+					hideViews.push(view);
+				}
+			}
+			// state was defined so check if view matches state
+			else if (foundViews.length) {
+
+				if (foundViews.indexOf(view)!=-1) {
+					showViews.push(view);
+				}
+				else {
+					hideViews.push(view);
+				}
+			}
+			// if no state names are defined show view (define unused state name to exclude)
+			else if (state==null || state=="") {
+				showViews.push(view);
+			}
+		}
+
+		if (showViews.length) {
+			var viewChangingEvent = new Event(self.VIEW_CHANGING);
+			viewChangingEvent.showViews = showViews;
+			viewChangingEvent.hideViews = hideViews;
+			window.dispatchEvent(viewChangingEvent);
+
+			if (viewChangingEvent.defaultPrevented==false) {
+				for (var index = 0; index < hideViews.length; index++) {
+					var view = hideViews[index];
+
+					if (self.isOverlay(view)) {
+						self.removeOverlay(view);
+					}
+					else {
+						self.hideElement(view);
+					}
+				}
+
+				for (var index = 0; index < showViews.length; index++) {
+					var view = showViews[index];
+
+					if (index==showViews.length-1) {
+						self.clearDisplay(view);
+						self.setViewOptions(view);
+						self.setViewVariables(view);
+						self.centerView(view);
+						self.updateURLState(view, state);
+					}
+				}
+			}
+
+			var viewChangeEvent = new Event(self.VIEW_CHANGE);
+			viewChangeEvent.showViews = showViews;
+			viewChangeEvent.hideViews = hideViews;
+			window.dispatchEvent(viewChangeEvent);
+		}
+		
+	}
+
+	self.clearDisplay = function(view) {
+		view.style.setProperty("display", null);
+	}
+
+	self.hashChangeHandler = function(event) {
+		var fragment = self.getHashFragment();
+		var view = self.getViewById(fragment);
+
+		if (self.showByMediaQuery) {
+			var stateName = fragment;
+
+			if (stateName==null || stateName=="") {
+				var initialView = self.getInitialView();
+				stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+			}
+			self.showMediaQueryViewsByState(stateName);
+		}
+		else {
+			if (view) {
+				self.hideViews();
+				self.showView(view);
+				self.setViewVariables(view);
+				self.updateViewLabel();
+				
+				window.dispatchEvent(new Event(self.VIEW_CHANGE));
+			}
+			else {
+				window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+			}
+		}
+	}
+
+	self.popStateHandler = function(event) {
+		var state = event.state;
+		var fragment = state ? state.name : window.location.hash;
+		var view = self.getViewById(fragment);
+
+		if (view) {
+			self.hideViews();
+			self.showView(view);
+			self.updateViewLabel();
+		}
+		else {
+			window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+		}
+	}
+
+	self.doubleClickHandler = function(event) {
+		var view = self.getVisibleView();
+		var scaleValue = view ? self.getViewScaleValue(view) : 1;
+		var scaleNeededToFit = view ? self.getViewFitToViewportScale(view) : 1;
+		var scaleNeededToFitWidth = view ? self.getViewFitToViewportWidthScale(view) : 1;
+		var scaleNeededToFitHeight = view ? self.getViewFitToViewportHeightScale(view) : 1;
+		var scaleToFitType = self.scaleToFitType;
+
+		// Three scenarios
+		// - scale to fit on double click
+		// - set scale to actual size on double click
+		// - switch between scale to fit and actual page size
+
+		if (scaleToFitType=="width") {
+			scaleNeededToFit = scaleNeededToFitWidth;
+		}
+		else if (scaleToFitType=="height") {
+			scaleNeededToFit = scaleNeededToFitHeight;
+		}
+
+		// if scale and actual size enabled then switch between
+		if (self.scaleToFitOnDoubleClick && self.actualSizeOnDoubleClick) {
+			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+			var isScaled = false;
+			
+			// if scale is not 1 then view needs scaling
+			if (scaleNeededToFit!=1) {
+
+				// if current scale is at 1 it is at actual size
+				// scale it to fit
+				if (scaleValue==1) {
+					self.scaleViewToFit(view);
+					isScaled = true;
+				}
+				else {
+					// scale is not at 1 so switch to actual size
+					self.scaleViewToActualSize(view);
+					isScaled = false;
+				}
+			}
+			else {
+				// view is smaller than viewport 
+				// so scale to fit() is scale actual size
+				// actual size and scaled size are the same
+				// but call scale to fit to retain centering
+				self.scaleViewToFit(view);
+				isScaled = false;
+			}
+			
+			view.setAttributeNS(null, self.SIZE_STATE_NAME, isScaled+"");
+			isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+		}
+		else if (self.scaleToFitOnDoubleClick) {
+			self.scaleViewToFit(view);
+		}
+		else if (self.actualSizeOnDoubleClick) {
+			self.scaleViewToActualSize(view);
+		}
+
+	}
+
+	self.scaleViewToFit = function(view) {
+		return self.setViewScaleValue(view, true);
+	}
+
+	self.scaleViewToActualSize = function(view) {
+		self.setViewScaleValue(view, false, 1);
+	}
+
+	self.onloadHandler = function(event) {
+		self.initialize();
+	}
+
+	self.setElementHTML = function(id, value) {
+		var element = self.getElement(id);
+		element.innerHTML = value;
+	}
+
+	self.getStackArray = function(error) {
+		var value = "";
+		
+		if (error==null) {
+		  try {
+			 error = new Error("Stack");
+		  }
+		  catch (e) {
+			 
+		  }
+		}
+		
+		if ("stack" in error) {
+		  value = error.stack;
+		  var methods = value.split(/\n/g);
+	 
+		  var newArray = methods ? methods.map(function (value, index, array) {
+			 value = value.replace(/\@.*/,"");
+			 return value;
+		  }) : null;
+	 
+		  if (newArray && newArray[0].includes("getStackTrace")) {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0].includes("getStackArray")) {
+			 newArray.shift();
+		  }
+		  if (newArray && newArray[0]=="") {
+			 newArray.shift();
+		  }
+	 
+			return newArray;
+		}
+		
+		return null;
+	}
+
+	self.log = function(value) {
+		console.log.apply(this, [value]);
+	}
+	
+	// initialize on load
+	// sometimes the body size is 0 so we call this now and again later
+	window.addEventListener("load", self.onloadHandler);
+	window.document.addEventListener("DOMContentLoaded", self.onloadHandler);
+}
+
+window.application = new Application();
+</script>
+</head>
+<body>
+<div id="Connection">
+	<div id="Header">
+		<svg class="Header-container">
+			<rect id="Header-container" rx="0" ry="0" x="0" y="0" width="1920" height="49">
+			</rect>
+		</svg>
+		<div id="Se_connecter">
+			<span>Se connecter</span>
+		</div>
+		<svg class="User-icon" viewBox="0 0 16 24">
+			<path id="User-icon" d="M 10.85714340209961 6 C 10.85714340209961 3.928931951522827 9.577956199645996 2.25 8 2.25 C 6.422043800354004 2.25 5.142857551574707 3.928932189941406 5.142857551574707 6 C 5.142857551574707 8.071067810058594 6.422044277191162 9.75 8 9.75 C 9.577956199645996 9.75 10.85714340209961 8.071067810058594 10.85714340209961 6 Z M 3.428571701049805 6 C 3.428571701049805 2.686291217803955 5.47527027130127 0 8 0 C 10.52473068237305 0 12.57142925262451 2.686291694641113 12.57142925262451 6 C 12.57142925262451 9.313708305358887 10.52473068237305 12 8 12 C 5.47527027130127 12 3.428571701049805 9.313708305358887 3.428571701049805 5.999999523162842 Z M 1.760714292526245 21.75 L 14.23928642272949 21.75 C 13.92142963409424 18.78281402587891 11.97857284545898 16.5 9.632143974304199 16.5 L 6.367857456207275 16.5 C 4.021429061889648 16.5 2.078571796417236 18.78281402587891 1.760714530944824 21.75 Z M 0 22.60781097412109 C 0 17.99062347412109 2.850000143051147 14.25 6.367857456207275 14.25 L 9.632143974304199 14.25 C 13.15000057220459 14.25 16 17.99062347412109 16 22.60781097412109 C 16 23.37656211853027 15.52500152587891 24 14.93928623199463 24 L 1.060714364051819 24 C 0.4750000238418579 24 0 23.37656402587891 0 22.60781097412109 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Menu">
+		<svg class="Search-input">
+			<rect id="Search-input" rx="0" ry="0" x="0" y="0" width="233" height="41">
+			</rect>
+		</svg>
+		<svg class="Search-icon" viewBox="0 0 16 16">
+			<path id="Search-icon" d="M 13.00063514709473 6.499048233032227 C 13.00063514709473 7.933213233947754 12.534987449646 9.25801944732666 11.75057411193848 10.33286285400391 L 15.70701789855957 14.29165744781494 C 16.09766006469727 14.68222522735596 16.09766006469727 15.31650733947754 15.70701789855957 15.70707511901855 C 15.31637477874756 16.09764099121094 14.68196773529053 16.09764099121094 14.2913236618042 15.70707511901855 L 10.33488082885742 11.7482795715332 C 9.259828567504883 12.53566455841064 7.934762954711914 12.99809646606445 6.500318050384521 12.99809646606445 C 2.909517049789429 12.99809646606445 0 10.08914756774902 0 6.499048233032227 C 0 2.908949375152588 2.909517049789429 0 6.500317573547363 0 C 10.09111785888672 0 13.00063514709473 2.908949136734009 13.00063514709473 6.499048233032227 Z M 6.500317573547363 10.99839019775391 C 8.985719680786133 10.99839019775391 11.00053787231445 8.983965873718262 11.00053787231445 6.499048233032227 C 11.00053787231445 4.014130592346191 8.985719680786133 1.999707221984863 6.500317573547363 1.999707221984863 C 4.014914989471436 1.999707221984863 2.000097751617432 4.01413106918335 2.000097751617432 6.499048233032227 C 2.000097751617432 8.983965873718262 4.014915466308594 10.99839019775391 6.500317573547363 10.99839019775391 Z">
+			</path>
+		</svg>
+		<div id="NOS_PRODUITS">
+			<span>NOS PRODUITS</span>
+		</div>
+		<div id="NOS_PRODUITS_w">
+			<span>NOS PRODUITS</span>
+		</div>
+		<div id="NOS_PRODUITS_x">
+			<span>NOS PRODUITS</span>
+		</div>
+	</div>
+	<div id="Jumbotron">
+		<svg class="Jumbotron_z">
+			<rect id="Jumbotron_z" rx="0" ry="0" x="0" y="0" width="1920" height="324">
+			</rect>
+		</svg>
+		<svg class="Trac_1" viewBox="0 0 24 24">
+			<path id="Trac_1" d="M 2.25 12 C 2.25 6.615222930908203 6.615224361419678 2.25 12 2.25 C 17.3847770690918 2.25 21.75 6.615224361419678 21.75 12 C 21.75 17.3847770690918 17.38477516174316 21.75 11.99999904632568 21.75 C 6.615222930908203 21.75 2.25 17.38477516174316 2.25 11.99999904632568 Z M 24 12 C 24 5.37258243560791 18.62741661071777 0 11.99999904632568 0 C 5.37258243560791 0 0 5.372583389282227 0 12 C 0 18.62741661071777 5.372583389282227 24 12 24 C 18.62741661071777 24 24 18.62741661071777 24 11.99999904632568 Z M 10.19062423706055 17.66718673706055 C 10.38749980926514 17.87812423706055 10.6640625 18 10.95468711853027 18 C 11.53125 18 12 17.53125 12 16.95468902587891 L 12 14.25 L 16.5 14.25 C 17.32968902587891 14.25 18 13.57968807220459 18 12.75 L 18 11.25 C 18 10.42031288146973 17.32968902587891 9.75 16.5 9.75 L 12 9.75 L 12 7.045312881469727 C 12 6.46875 11.53125 6 10.95468711853027 6 C 10.6640625 6 10.38749980926514 6.121875286102295 10.19062423706055 6.332812786102295 L 5.5078125 11.35312461853027 C 5.34375 11.53125 5.25 11.76093673706055 5.25 12 C 5.25 12.23906326293945 5.34375 12.47343826293945 5.5078125 12.64687442779541 L 10.19062423706055 17.66718673706055 Z">
+			</path>
+		</svg>
+		<svg class="Trac_2" viewBox="0 0 24 24">
+			<path id="Trac_2" d="M 21.75 12 C 21.75 17.3847770690918 17.38477516174316 21.75 11.99999904632568 21.75 C 6.615222930908203 21.75 2.25 17.38477516174316 2.25 11.99999904632568 C 2.25 6.615222930908203 6.615224361419678 2.249999284744263 12 2.249999284744263 C 17.3847770690918 2.249999284744263 21.75 6.615222930908203 21.75 12 Z M 0 12 C 0 18.62741661071777 5.372583389282227 24 12 24 C 18.62741661071777 24 24 18.62741661071777 24 11.99999904632568 C 24 5.37258243560791 18.62741661071777 0 11.99999904632568 0 C 5.37258243560791 0 0 5.372583389282227 0 12 Z M 13.80937576293945 6.332812786102295 C 13.61249923706055 6.121875286102295 13.3359375 6 13.04531288146973 6 C 12.46875 6 12 6.46875 12 7.045312881469727 L 12 9.75 L 7.5 9.75 C 6.670312881469727 9.75 6 10.42031288146973 6 11.25 L 6 12.75 C 6 13.57968807220459 6.670312881469727 14.25 7.5 14.25 L 12 14.25 L 12 16.95468902587891 C 12 17.53125 12.46875 18 13.04531192779541 18 C 13.3359375 18 13.61249923706055 17.87812423706055 13.80937385559082 17.66718673706055 L 18.49218559265137 12.64687442779541 C 18.65624809265137 12.46875 18.74999809265137 12.23906135559082 18.74999809265137 11.99999904632568 C 18.74999809265137 11.76093673706055 18.65624809265137 11.52656173706055 18.49218559265137 11.35312461853027 L 13.80937576293945 6.332812786102295 Z">
+			</path>
+		</svg>
+		<div id="PROMOTION_ETE">
+			<span>PROMOTION ETE</span>
+		</div>
+		<div id="JUQUA_40_DE_REDUCTION">
+			<span>JUQU'A 40% DE REDUCTION</span>
+		</div>
+		<div id="SAC__MAIN_Louis_Vuitton">
+			<span>SAC à MAIN Louis Vuitton</span>
+		</div>
+		<img id="Sac-LV" src="Sac-LV.png" srcset="Sac-LV.png 1x, Sac-LV@2x.png 2x">
+			
+		<div id="Logo-LV">
+			<svg class="Trac_9" viewBox="1 -126 103.1 100">
+				<path id="Trac_9" d="M 77.20000457763672 -123.3000030517578 C 77.40000152587891 -121 78 -120.4000015258789 80.70000457763672 -120.2000045776367 C 85.80000305175781 -119.7000045776367 86.59999847412109 -117.8000030517578 84.09999847412109 -112.5 C 82.90000152587891 -110 78 -98.40000152587891 73 -86.70000457763672 C 60.20000076293945 -56.20000076293945 58.40000152587891 -52.10000228881836 57.70000076293945 -51.40000152587891 C 57.40000152587891 -51.10000228881836 55.5 -54.29999923706055 53.60000228881836 -58.5 L 50 -66.30000305175781 L 56.40000152587891 -83.90000152587891 C 60 -93.59999847412109 63.20000076293945 -102.3000030517578 63.60000228881836 -103.3000030517578 C 64.40000152587891 -105.5 69.09999847412109 -108 72.5 -108 C 73.90000152587891 -108 75 -108.4000015258789 75 -108.9000015258789 C 75 -109.4000015258789 75.30000305175781 -110.5 75.59999847412109 -111.4000015258789 C 76.09999847412109 -112.8000030517578 74.40000152587891 -113 60.60000228881836 -113 C 45.29999923706055 -113 44.90000152587891 -113 44.10000228881836 -110.8000030517578 C 43.40000152587891 -108.9000015258789 43.60000228881836 -108.3000030517578 45.40000152587891 -107.5 C 46.5 -107 47.79999923706055 -106.0999984741211 48.10000228881836 -105.5999984741211 C 48.70000076293945 -104.8000030517578 43.10000228881836 -86.70000457763672 41.79999923706055 -85.5 C 41.5 -85.20000457763672 40 -87.80000305175781 38.5 -91.20000457763672 C 36.90000152587891 -94.70000457763672 33.70000076293945 -101.5999984741211 31.30000114440918 -106.7000045776367 C 26.80000114440918 -116.0999984741211 26.60000038146973 -118 30.10000038146973 -118 C 31.5 -118 32 -118.7000045776367 32 -121 L 32 -124 L 16.5 -124 L 1 -124 L 1 -121 C 1 -118.3000030517578 1.300000071525574 -118 4 -118 C 9.300000190734863 -118 12.10000038146973 -113.8000030517578 23.5 -89.5 C 29.39999961853027 -76.90000152587891 34.29999923706055 -66.09999847412109 34.29999923706055 -65.5 C 34.40000152587891 -63 23.60000038146973 -36 22 -34.5 C 20.89999961853027 -33.5 17.70000076293945 -32.60000228881836 13.80000019073486 -32.29999923706055 C 9.800000190734863 -32 7.099999904632568 -31.20000076293945 6.200000286102295 -30.20000076293945 C 2.900000095367432 -26 2.900000095367432 -26 48.29999923706055 -26 L 91.70000457763672 -26 L 97.70000457763672 -38.70000076293945 L 103.7000045776367 -51.5 L 101.0999984741211 -51.79999923706055 C 99.40000152587891 -52.10000228881836 98.20000457763672 -51.60000228881836 97.5 -50.40000152587891 C 93.20000457763672 -43 88 -36.20000076293945 85.09999847412109 -34.29999923706055 C 81.80000305175781 -32.10000228881836 80.90000152587891 -32 59.40000152587891 -32 L 37.10000228881836 -32 L 39.79999923706055 -39.5 C 41.29999923706055 -43.60000228881836 42.79999923706055 -47 43.10000228881836 -47 C 43.40000152587891 -47 44.70000076293945 -44.79999923706055 46 -42 L 48.29999923706055 -37 L 53.70000076293945 -37 L 59.10000228881836 -37 L 61.5 -42.29999923706055 C 62.79999923706055 -45.10000228881836 70.20000457763672 -62.60000228881836 78 -81 C 85.80000305175781 -99.40000152587891 93.20000457763672 -115.5999984741211 94.5 -116.9000015258789 C 95.70000457763672 -118.0999984741211 98.30000305175781 -119.5 100.0999984741211 -119.9000015258789 C 102.8000030517578 -120.4000015258789 103.5999984741211 -121.0999984741211 103.8000030517578 -123.3000030517578 L 104.0999984741211 -126 L 90.5 -126 L 76.90000152587891 -126 L 77.20000457763672 -123.3000030517578 Z">
+				</path>
+			</svg>
+			<svg class="Trac_10" viewBox="5 -18.5 5.542 10.5">
+				<path id="Trac_10" d="M 5.200000286102295 -13.30000019073486 L 5 -8 L 8.300000190734863 -8.100000381469727 C 11.19999980926514 -8.300000190734863 11.19999980926514 -8.300000190734863 8.800000190734863 -8.699999809265137 C 6.400000095367432 -9.100000381469727 6.099999904632568 -9.600000381469727 5.700000286102295 -13.80000019073486 L 5.400000095367432 -18.5 L 5.200000286102295 -13.30000019073486 Z">
+				</path>
+			</svg>
+			<svg class="Trac_11" viewBox="11.1 -17.986 8.9 9.971">
+				<path id="Trac_11" d="M 12.60000038146973 -16.39999961853027 C 10.60000038146973 -14.40000057220459 10.60000038146973 -11.60000038146973 12.60000038146973 -9.600000381469727 C 15.80000019073486 -6.400000095367432 20 -8.300000190734863 20 -13 C 20 -17.70000076293945 15.80000019073486 -19.60000038146973 12.60000038146973 -16.39999961853027 Z M 18.39999961853027 -14.80000019073486 C 19.80000114440918 -12.5 18.10000038146973 -9.5 15.40000057220459 -9.5 C 13.40000057220459 -9.5 12.30000019073486 -12.80000019073486 13.40000057220459 -15.60000038146973 C 14.10000038146973 -17.5 16.89999961853027 -17 18.39999961853027 -14.80000019073486 Z">
+				</path>
+			</svg>
+			<svg class="Trac_12" viewBox="22.2 -18.5 6.6 10">
+				<path id="Trac_12" d="M 22.39999961853027 -13.5 C 22.5 -8.600000381469727 22.60000038146973 -8.5 25.5 -8.5 C 28.39999961853027 -8.5 28.5 -8.600000381469727 28.60000038146973 -13.5 L 28.80000114440918 -18.5 L 28.10000038146973 -14 C 27.60000038146973 -10.40000057220459 27.10000038146973 -9.5 25.5 -9.5 C 23.89999961853027 -9.5 23.39999961853027 -10.40000057220459 22.89999961853027 -14 L 22.20000076293945 -18.5 L 22.39999961853027 -13.5 Z">
+				</path>
+			</svg>
+			<svg class="Trac_13" viewBox="31.3 -16.39 0.55 6.815">
+				<path id="Trac_13" d="M 31.30000114440918 -13 C 31.30000114440918 -10 31.5 -8.699999809265137 31.70000076293945 -10.19999980926514 C 31.89999961853027 -11.80000019073486 31.89999961853027 -14.19999980926514 31.70000076293945 -15.69999980926514 C 31.5 -17.30000114440918 31.30000114440918 -16 31.30000114440918 -13 Z">
+				</path>
+			</svg>
+			<svg class="Trac_14" viewBox="34 -17.768 7.791 9.462">
+				<path id="Trac_14" d="M 35.10000228881836 -16.70000076293945 C 34.20000076293945 -15.5 34.29999923706055 -14.90000057220459 35.5 -13.60000038146973 C 36.40000152587891 -12.69999980926514 37.79999923706055 -12 38.60000228881836 -12 C 39.40000152587891 -12 40 -11.30000019073486 40 -10.5 C 40 -8.699999809265137 36.90000152587891 -8.5 35.20000076293945 -10.19999980926514 C 34.29999923706055 -11.10000038146973 34 -11.10000038146973 34 -10.19999980926514 C 34 -8.199999809265137 39 -7.599999904632568 40.70000076293945 -9.300000190734863 C 42.10000228881836 -10.60000038146973 42.10000228881836 -11.19999980926514 41 -12.40000057220459 C 40.29999923706055 -13.30000019073486 38.90000152587891 -14 37.90000152587891 -14 C 36.79999923706055 -14 36 -14.69999980926514 36 -15.5 C 36 -17.30000114440918 38.10000228881836 -17.5 39.90000152587891 -15.80000019073486 C 41 -14.69999980926514 41.20000076293945 -14.80000019073486 40.79999923706055 -16 C 40.20000076293945 -18 36.60000228881836 -18.39999961853027 35.10000228881836 -16.70000076293945 Z">
+				</path>
+			</svg>
+			<svg class="Trac_15" viewBox="45.764 -18 7.805 9.914">
+				<path id="Trac_15" d="M 47.20000076293945 -13.30000019073486 C 48.29999923706055 -10.60000038146973 49.40000152587891 -8.300000190734863 49.60000228881836 -8.100000381469727 C 49.79999923706055 -7.900000095367432 50.90000152587891 -9.90000057220459 52 -12.5 C 53.10000228881836 -15.10000038146973 53.79999923706055 -17.5 53.5 -17.80000114440918 C 53.29999923706055 -18.10000038146973 52.29999923706055 -16.60000038146973 51.29999923706055 -14.40000057220459 L 49.70000076293945 -10.5 L 48.20000076293945 -14.30000019073486 C 47.40000152587891 -16.30000114440918 46.40000152587891 -18 45.90000152587891 -18 C 45.5 -18 46 -15.90000057220459 47.20000076293945 -13.30000019073486 Z">
+				</path>
+			</svg>
+			<svg class="Trac_16" viewBox="55.361 -18.5 6.439 10">
+				<path id="Trac_16" d="M 55.40000152587891 -13.5 C 55.5 -8.600000381469727 55.60000228881836 -8.5 58.5 -8.5 C 61.40000152587891 -8.5 61.5 -8.600000381469727 61.60000228881836 -13.5 L 61.79999923706055 -18.5 L 61.10000228881836 -14 C 60.70000076293945 -10.90000057220459 60 -9.40000057220459 58.79999923706055 -9.199999809265137 C 57.10000228881836 -8.90000057220459 56.70000076293945 -9.699999809265137 55.60000228881836 -16 C 55.40000152587891 -17.39999961853027 55.29999923706055 -16.30000114440918 55.40000152587891 -13.5 Z">
+				</path>
+			</svg>
+			<svg class="Trac_17" viewBox="64 -18 2 10">
+				<path id="Trac_17" d="M 64 -13 C 64 -10.30000019073486 64.5 -8 65 -8 C 65.59999847412109 -8 66 -10.30000019073486 66 -13 C 66 -15.80000019073486 65.59999847412109 -18 65 -18 C 64.5 -18 64 -15.80000019073486 64 -13 Z">
+				</path>
+			</svg>
+			<svg class="Trac_18" viewBox="67.87 -17.8 5.259 10.3">
+				<path id="Trac_18" d="M 68.20000457763672 -17.30000114440918 C 69.40000152587891 -17 70 -15.5 70.30000305175781 -12.19999980926514 L 70.59999847412109 -7.5 L 70.80000305175781 -12.19999980926514 C 71 -15.69999980926514 71.40000152587891 -17 72.80000305175781 -17.30000114440918 C 73.70000457763672 -17.60000038146973 72.70000457763672 -17.80000114440918 70.5 -17.80000114440918 C 68.30000305175781 -17.80000114440918 67.30000305175781 -17.60000038146973 68.20000457763672 -17.30000114440918 Z">
+				</path>
+			</svg>
+			<svg class="Trac_19" viewBox="75.87 -17.8 5.259 10.3">
+				<path id="Trac_19" d="M 76.20000457763672 -17.30000114440918 C 77.40000152587891 -17 78 -15.5 78.30000305175781 -12.19999980926514 L 78.59999847412109 -7.5 L 78.80000305175781 -12.19999980926514 C 79 -15.69999980926514 79.40000152587891 -17 80.80000305175781 -17.30000114440918 C 81.70000457763672 -17.60000038146973 80.70000457763672 -17.80000114440918 78.5 -17.80000114440918 C 76.30000305175781 -17.80000114440918 75.30000305175781 -17.60000038146973 76.20000457763672 -17.30000114440918 Z">
+				</path>
+			</svg>
+			<svg class="Trac_20" viewBox="83 -17.941 8.725 9.916">
+				<path id="Trac_20" d="M 84.20000457763672 -16.80000114440918 C 83.5 -16.10000038146973 83 -14.40000057220459 83 -13 C 83 -7.800000190734863 87.80000305175781 -6.200000286102295 90.59999847412109 -10.5 C 92.09999847412109 -12.80000019073486 92.09999847412109 -13.19999980926514 90.59999847412109 -15.5 C 88.80000305175781 -18.20000076293945 86.09999847412109 -18.70000076293945 84.20000457763672 -16.80000114440918 Z M 89.80000305175781 -13.19999980926514 C 90.20000457763672 -9.600000381469727 88 -7.900000095367432 85.5 -10 C 83.70000457763672 -11.5 83.5 -15.60000038146973 85.30000305175781 -16.30000114440918 C 88 -17.5 89.5 -16.39999961853027 89.80000305175781 -13.19999980926514 Z">
+				</path>
+			</svg>
+			<svg class="Trac_21" viewBox="93.1 -18 6.807 9.387">
+				<path id="Trac_21" d="M 93.09999847412109 -12.80000019073486 C 93.30000305175781 -7.599999904632568 93.30000305175781 -7.599999904632568 93.90000152587891 -11.5 L 94.5 -15.5 L 96.30000305175781 -12.30000019073486 C 99.09999847412109 -7.099999904632568 100 -7.400000095367432 99.90000152587891 -13.19999980926514 C 99.70000457763672 -18.20000076293945 99.70000457763672 -18.30000114440918 99.09999847412109 -14.69999980926514 L 98.5 -10.90000057220459 L 96.59999847412109 -14.40000057220459 C 95.5 -16.39999961853027 94.30000305175781 -18 93.80000305175781 -18 C 93.40000152587891 -18 93.09999847412109 -15.60000038146973 93.09999847412109 -12.80000019073486 Z">
+				</path>
+			</svg>
+		</div>
+		<img id="new-article" src="new-article.png" srcset="new-article.png 1x, new-article@2x.png 2x">
+			
+	</div>
+	<div id="Footer">
+		<svg class="Rectangle_10">
+			<rect id="Rectangle_10" rx="0" ry="0" x="0" y="0" width="1920" height="374">
+			</rect>
+		</svg>
+		<div id="A_PROPOS">
+			<span>A PROPOS</span>
+		</div>
+		<div id="APPLICATIONS">
+			<span>APPLICATIONS</span>
+		</div>
+		<div id="Qui_sommes-nous_">
+			<span>Qui sommes-nous ?</span>
+		</div>
+		<div id="Conditions_gnrales_de_vente">
+			<span>Conditions générales de vente</span>
+		</div>
+		<div id="Aide">
+			<span>Aide</span>
+		</div>
+		<div id="Cookie">
+			<span>Cookie</span>
+		</div>
+		<div id="Paiement_scuris">
+			<span>Paiement sécurisé</span>
+		</div>
+		<div id="Nous_contacter">
+			<span>Nous contacter</span>
+		</div>
+		<div id="Nous_rejoindre">
+			<span>Nous rejoindre</span>
+		</div>
+		<div id="INFORMATIONS_LEGALES">
+			<span>INFORMATIONS LEGALES</span>
+		</div>
+		<div id="FAQ">
+			<span>FAQ</span>
+		</div>
+		<div id="NEWLETTERS">
+			<span>NEWLETTERS</span>
+		</div>
+		<div id="SUIVEZ-NOUS_SUR_LES_RESEAUX">
+			<span>SUIVEZ-NOUS SUR LES RESEAUX</span>
+		</div>
+		<svg class="Rectangle_11">
+			<rect id="Rectangle_11" rx="0" ry="0" x="0" y="0" width="338" height="42">
+			</rect>
+		</svg>
+		<svg class="Rectangle_12">
+			<rect id="Rectangle_12" rx="22" ry="22" x="0" y="0" width="338" height="44">
+			</rect>
+		</svg>
+		<div id="Sabonner">
+			<span>S'abonner</span>
+		</div>
+		<div id="Votre_email">
+			<span>Votre email</span>
+		</div>
+		<img id="download_on_app_gallery00e5b75" src="download_on_app_gallery00e5b75.png" srcset="download_on_app_gallery00e5b75.png 1x, download_on_app_gallery00e5b75@2x.png 2x">
+			
+		<img id="download_on_google_play270265c" src="download_on_google_play270265c.png" srcset="download_on_google_play270265c.png 1x, download_on_google_play270265c@2x.png 2x">
+			
+		<img id="download_on_app_store7341ef41" src="download_on_app_store7341ef41.png" srcset="download_on_app_store7341ef41.png 1x, download_on_app_store7341ef41@2x.png 2x">
+			
+		<svg class="Rectangle_13">
+			<rect id="Rectangle_13" rx="0" ry="0" x="0" y="0" width="1920" height="81">
+			</rect>
+		</svg>
+		<div id="Copyright_Sandy_2023-07">
+			<span>Copyright Sandy 2023-07</span>
+		</div>
+		<svg class="Trac_22" viewBox="8 8 32 32">
+			<path id="Trac_22" d="M 40 24.09736251831055 C 40 15.20486831665039 32.83870697021484 8 24 8 C 15.16129016876221 8 8 15.20486831665039 8 24.09736251831055 C 8 32.13176345825195 13.85096740722656 38.79139709472656 21.5 40 L 21.5 28.75066947937012 L 17.43548393249512 28.75066947937012 L 17.43548393249512 24.09736251831055 L 21.5 24.09736251831055 L 21.5 20.55075073242188 C 21.5 16.51667213439941 23.8870964050293 14.28835678100586 27.5432243347168 14.28835678100586 C 29.29419326782227 14.28835678100586 31.12516021728516 14.60251426696777 31.12516021728516 14.60251426696777 L 31.12516021728516 18.56194686889648 L 29.10709571838379 18.56194686889648 C 27.11999893188477 18.56194686889648 26.49999809265137 19.80300140380859 26.49999809265137 21.07586097717285 L 26.49999809265137 24.09736251831055 L 30.93741798400879 24.09736251831055 L 30.22773933410645 28.75066947937012 L 26.49999809265137 28.75066947937012 L 26.49999809265137 40 C 34.14903259277344 38.79139709472656 40 32.13176345825195 40 24.09736251831055 Z">
+			</path>
+		</svg>
+		<svg class="Trac_23" viewBox="0 48.082 32 28">
+			<path id="Trac_23" d="M 28.71073722839355 55.06011962890625 C 28.73105049133301 55.36635589599609 28.73105049133301 55.67266082763672 28.73105049133301 55.9788932800293 C 28.73105049133301 65.31947326660156 22.13208770751953 76.08202362060547 10.07110214233398 76.08202362060547 C 6.355337142944336 76.08202362060547 2.903573513031006 74.92259216308594 0 72.91018676757812 C 0.5279395580291748 72.97576904296875 1.035504102706909 72.99765014648438 1.5837562084198 72.99765014648438 C 4.64970588684082 72.99765014648438 7.472091674804688 71.88206481933594 9.725913047790527 69.97892761230469 C 6.8426513671875 69.91327667236328 4.426392555236816 67.87891387939453 3.593888998031616 65.07889556884766 C 4.000015735626221 65.14447784423828 4.406079769134521 65.18824768066406 4.832519054412842 65.18824768066406 C 5.421333789825439 65.18824768066406 6.01021146774292 65.1007080078125 6.558400630950928 64.94766235351562 C 3.553326368331909 64.29135131835938 1.299442648887634 61.44763565063477 1.299442648887634 58.01325988769531 L 1.299442648887634 57.9257926940918 C 2.172508716583252 58.45079803466797 3.187825202941895 58.77891540527344 4.263891696929932 58.82261657714844 C 2.497384786605835 57.55384063720703 1.340067863464355 55.38824081420898 1.340067863464355 52.93822479248047 C 1.340067863464355 51.62574768066406 1.664881706237793 50.42262268066406 2.233446359634399 49.37261581420898 C 5.461896419525146 53.66011047363281 10.31472873687744 56.46006393432617 15.75631237030029 56.7663688659668 C 15.65481281280518 56.24136352539062 15.59387397766113 55.69454193115234 15.59387397766113 55.14765548706055 C 15.59387397766113 51.25386047363281 18.51776123046875 48.08202362060547 22.15227508544922 48.08202362060547 C 24.04059600830078 48.08202362060547 25.74616432189941 48.93514633178711 26.94416809082031 50.31327056884766 C 28.42636108398438 50.00703430175781 29.84767913818359 49.4163818359375 31.10662078857422 48.60702514648438 C 30.61924362182617 50.24768829345703 29.583740234375 51.62581634521484 28.22336006164551 52.50075531005859 C 29.54317855834961 52.34770202636719 30.82237243652344 51.95386505126953 32 51.40704727172852 C 31.10674667358398 52.80698776245117 29.98992919921875 54.05381393432617 28.71073722839355 55.06012344360352 Z">
+			</path>
+		</svg>
+		<svg class="Trac_24" viewBox="0 8 32 32">
+			<path id="Trac_24" d="M 32 24 C 32 32.83870697021484 24.83870887756348 40 16 40 C 14.34838581085205 40 12.76129055023193 39.74838638305664 11.26451587677002 39.28387069702148 C 11.91612911224365 38.21935272216797 12.8903226852417 36.4774169921875 13.25161266326904 35.0903205871582 C 13.44516181945801 34.34193420410156 14.24516105651855 31.28387069702148 14.24516105651855 31.28387069702148 C 14.76774215698242 32.27741622924805 16.29032135009766 33.12257766723633 17.90967750549316 33.12257766723633 C 22.7354850769043 33.12257766723633 26.2129020690918 28.68386840820312 26.2129020690918 23.1677417755127 C 26.2129020690918 17.88386917114258 21.89677238464355 13.92903137207031 16.34838676452637 13.92903137207031 C 9.445160865783691 13.92903137207031 5.774193286895752 18.5612907409668 5.774193286895752 23.6129035949707 C 5.774193286895752 25.96129035949707 7.025806427001953 28.88387107849121 9.019354820251465 29.81290435791016 C 9.322580337524414 29.9548397064209 9.483870506286621 29.89032363891602 9.554839134216309 29.60000038146973 C 9.606451988220215 29.38064575195312 9.877419471740723 28.29032516479492 10 27.7870979309082 C 10.03870964050293 27.62580680847168 10.01935482025146 27.48387145996094 9.890322685241699 27.32903289794922 C 9.238709449768066 26.52258110046387 8.709676742553711 25.05161476135254 8.709676742553711 23.67741966247559 C 8.709676742553711 20.14838600158691 11.38064479827881 16.73548316955566 15.9354829788208 16.73548316955566 C 19.86451530456543 16.73548316955566 22.61935424804688 19.41290283203125 22.61935424804688 23.24515914916992 C 22.61935424804688 27.57419395446777 20.43225860595703 30.57419204711914 17.58709716796875 30.57419204711914 C 16.01935386657715 30.57419204711914 14.83870887756348 29.27741813659668 15.2193546295166 27.68387031555176 C 15.6709680557251 25.7806453704834 16.54193687438965 23.72903251647949 16.54193687438965 22.35483741760254 C 16.54193687438965 21.12903213500977 15.88387203216553 20.10322570800781 14.5161304473877 20.10322570800781 C 12.9096794128418 20.10322570800781 11.61935710906982 21.76128959655762 11.61935710906982 23.98709678649902 C 11.61935710906982 25.40645027160645 12.09677600860596 26.36128997802734 12.09677600860596 26.36128997802734 C 12.09677600860596 26.36128997802734 10.5161304473877 33.05806350708008 10.22580814361572 34.30967712402344 C 9.903227806091309 35.6903190612793 10.03225994110107 37.63870620727539 10.16774368286133 38.90322494506836 C 4.219354629516602 36.57419204711914 0 30.7806453704834 0 24 C 0 15.16129016876221 7.161290168762207 8 16 8 C 24.83870887756348 8 32 15.16129016876221 32 24 Z">
+			</path>
+		</svg>
+		<svg class="Trac_25" viewBox="-0.075 31.825 32 32">
+			<path id="Trac_25" d="M 15.92857456207275 39.62060165405273 C 11.38825035095215 39.62060165405273 7.726008415222168 43.28366088867188 7.726008415222168 47.82499694824219 C 7.726008415222168 52.3663330078125 11.38825035095215 56.02938842773438 15.92857456207275 56.02938842773438 C 20.46889686584473 56.02938842773438 24.13113784790039 52.3663330078125 24.13113784790039 47.82499694824219 C 24.13113784790039 43.28366088867188 20.46889686584473 39.62060165405273 15.92857456207275 39.62060165405273 Z M 15.92857456207275 53.1589241027832 C 12.99449634552002 53.1589241027832 10.59583568572998 50.76686859130859 10.59583568572998 47.82499694824219 C 10.59583568572998 44.88312530517578 12.98735809326172 42.49106979370117 15.92857456207275 42.49106979370117 C 18.86978721618652 42.49106979370117 21.26131057739258 44.88312530517578 21.26131057739258 47.82499694824219 C 21.26131057739258 50.76686859130859 18.86264801025391 53.1589241027832 15.92857265472412 53.1589241027832 Z M 26.37988471984863 39.28499984741211 C 26.37988471984863 40.34892654418945 25.52321815490723 41.19864273071289 24.46666717529297 41.19864273071289 C 23.40297508239746 41.19864273071289 22.5534496307373 40.34178924560547 22.5534496307373 39.28499984741211 C 22.5534496307373 38.22821044921875 23.41011428833008 37.37135314941406 24.46666717529297 37.37135314941406 C 25.52321815490723 37.37135314941406 26.37988471984863 38.22821044921875 26.37988471984863 39.28499984741211 Z M 31.81256675720215 41.22720336914062 C 31.69120597839355 38.66378021240234 31.10581970214844 36.39311218261719 29.22829437255859 34.52230834960938 C 27.35790824890137 32.65150451660156 25.08774757385254 32.06598663330078 22.52489280700684 31.93745803833008 C 19.88350868225098 31.78750991821289 11.96649932861328 31.78750991821289 9.325116157531738 31.93745803833008 C 6.769399166107178 32.05884552001953 4.499237537384033 32.64436340332031 2.621713399887085 34.51516723632812 C 0.744189441204071 36.38597106933594 0.1659408211708069 38.65663909912109 0.03744114190340042 41.22006225585938 C -0.1124752014875412 43.86203765869141 -0.1124752014875412 51.78081512451172 0.03744114190340042 54.42278289794922 C 0.1588020026683807 56.98621368408203 0.7441896200180054 59.25688171386719 2.621713399887085 61.12768173217773 C 4.499237537384033 62.99848175048828 6.762260437011719 63.58400344848633 9.325116157531738 63.71253204345703 C 11.96649932861328 63.86248016357422 19.88350868225098 63.86248016357422 22.52489280700684 63.71253204345703 C 25.08774757385254 63.59114456176758 27.35791015625 63.0056266784668 29.22829437255859 61.12768173217773 C 31.09868049621582 59.25688171386719 31.68406677246094 56.98621368408203 31.81256675720215 54.42278289794922 C 31.96248435974121 51.78081512451172 31.96248435974121 43.86917877197266 31.81256675720215 41.22720336914062 Z M 28.40018463134766 57.25755310058594 C 27.84335327148438 58.65708160400391 26.76538276672363 59.73529434204102 25.35902404785156 60.29939270019531 C 23.25305557250977 61.13482666015625 18.25584411621094 60.94203186035156 15.9285717010498 60.94203186035156 C 13.60129833221436 60.94203186035156 8.596948623657227 61.127685546875 6.498119354248047 60.29939270019531 C 5.098900318145752 59.742431640625 4.020930290222168 58.66422271728516 3.456959247589111 57.25755310058594 C 2.621711015701294 55.15111541748047 2.814460515975952 50.15278625488281 2.814460515975952 47.82499694824219 C 2.814460515975952 45.4972038269043 2.628849983215332 40.49173736572266 3.456959247589111 38.39244079589844 C 4.013791561126709 36.9929084777832 5.091761589050293 35.91469955444336 6.498119354248047 35.35060119628906 C 8.604086875915527 34.51516723632812 13.60129833221436 34.70795822143555 15.9285717010498 34.70795822143555 C 18.25584411621094 34.70795822143555 23.26019477844238 34.52230834960938 25.35902404785156 35.35060119628906 C 26.75824356079102 35.90755844116211 27.83621406555176 36.98576736450195 28.40018463134766 38.39244079589844 C 29.23543357849121 40.49887847900391 29.04268264770508 45.4972038269043 29.04268264770508 47.82499694824219 C 29.04268264770508 50.15278625488281 29.23543357849121 55.15825271606445 28.40018463134766 57.25755310058594 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Accueil__Se_connecter">
+		<span>Accueil / Se connecter</span>
+	</div>
+	<div id="Login-form">
+		<svg class="Rectangle_14">
+			<rect id="Rectangle_14" rx="0" ry="0" x="0" y="0" width="1144" height="542">
+			</rect>
+		</svg>
+		<svg class="Rectangle_15">
+			<rect id="Rectangle_15" rx="0" ry="0" x="0" y="0" width="672" height="74">
+			</rect>
+		</svg>
+		<svg class="Rectangle_16">
+			<rect id="Rectangle_16" rx="0" ry="0" x="0" y="0" width="483" height="74">
+			</rect>
+		</svg>
+		<div id="E-mail">
+			<span>E-mail</span>
+		</div>
+		<div id="Mot_de_passe">
+			<span>Mot de passe</span>
+		</div>
+		<svg class="Rectangle_17">
+			<rect id="Rectangle_17" rx="0" ry="0" x="0" y="0" width="189" height="74">
+			</rect>
+		</svg>
+		<div id="Mot_de_passe_oubli">
+			<span>Mot de passe oublié?</span>
+		</div>
+		<svg class="Rectangle_18">
+			<rect id="Rectangle_18" rx="30" ry="30" x="0" y="0" width="482" height="74">
+			</rect>
+		</svg>
+		<div id="SE_CONNECTER">
+			<span>SE CONNECTER</span>
+		</div>
+		<div id="Crez_un_compte_">
+			<span>Créez un compte </span>
+		</div>
+		<svg class="eye-solid" viewBox="0.025 32 42 32">
+			<path id="eye-solid" d="M 21.0213565826416 32 C 15.13019943237305 32 10.41290187835693 34.62857055664062 6.978824138641357 37.75714111328125 C 3.566619873046875 40.85714340209961 1.284526228904724 44.57142639160156 0.2054532170295715 47.12142944335938 C -0.03515093401074409 47.68571472167969 -0.03515093401074409 48.31428527832031 0.2054532170295715 48.87857055664062 C 1.284526228904724 51.42857360839844 3.566619873046875 55.14285659790039 6.978824615478516 58.24285888671875 C 10.41290187835693 61.37142944335938 15.13019943237305 64 21.0213565826416 64 C 26.91251182556152 64 31.62980842590332 61.37142944335938 35.06388854980469 58.24285888671875 C 38.47609329223633 55.13571166992188 40.75818634033203 51.42857360839844 41.84454727172852 48.87857055664062 C 42.08515167236328 48.31428527832031 42.08515167236328 47.68571472167969 41.84454727172852 47.12142944335938 C 40.7581787109375 44.57142639160156 38.47608947753906 40.85713958740234 35.06388473510742 37.75714111328125 C 31.62980842590332 34.62857055664062 26.91251182556152 32 21.0213565826416 32 Z M 10.52226638793945 48 C 10.52226638793945 42.31935501098633 15.22286987304688 37.71428680419922 21.0213565826416 37.71428680419922 C 26.81984329223633 37.71428680419922 31.52044677734375 42.31935882568359 31.52044677734375 48 C 31.52044677734375 53.68064117431641 26.81984329223633 58.28571319580078 21.0213565826416 58.28571319580078 C 15.22286987304688 58.28571319580078 10.52226638793945 53.68064117431641 10.52226638793945 48 Z M 21.0213565826416 43.42857360839844 C 21.0213565826416 45.95000076293945 18.92883110046387 48 16.35509300231934 48 C 15.83743095397949 48 15.34164047241211 47.91428375244141 14.87501335144043 47.76428604125977 C 14.47400665283203 47.63571166992188 14.00738143920898 47.87857055664062 14.02196407318115 48.2928581237793 C 14.04383659362793 48.78571319580078 14.11674690246582 49.27857208251953 14.25527572631836 49.77143096923828 C 15.25414848327637 53.42857360839844 19.09652328491211 55.60000228881836 22.82953071594238 54.62142944335938 C 26.56254005432129 53.64285659790039 28.77901649475098 49.87857055664062 27.78014183044434 46.22142791748047 C 26.9708366394043 43.25714111328125 24.2950267791748 41.26428604125977 21.32028579711914 41.14285659790039 C 20.89740943908691 41.12857055664062 20.64951133728027 41.57857131958008 20.7807502746582 41.97856903076172 C 20.93386268615723 42.43571472167969 21.02135276794434 42.92142868041992 21.02135276794434 43.42857360839844 Z">
+			</path>
+		</svg>
+	</div>
+</div>
+</body>
+</html>
